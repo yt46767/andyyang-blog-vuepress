@@ -1,0 +1,114 @@
+@require './config'
+@require './setScrollBody'
+@require './code'
+@require './wrapper'
+@require './toc'
+@require './scrollbar'
+@require './vuetifyReset'
+@require './backdropFilter'
+@require './font'
+@require './demoAndCodeWrapper'
+@require './vssue'
+@require './tabs'
+@require './title'
+@require './fullscreen'
+
+html
+  font-size 14px
+
+body
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+
+{$contentClass}
+  min-height 100%
+  @extend $wrapper
+
+  > .content__default
+    > *:first-child
+      margin-top 0
+
+    > *:last-child
+      margin-bottom 0
+
+    ul, ol
+      margin-top 8px
+      margin-bottom 8px
+
+    p
+      margin-bottom 8px
+
+      &:last-child
+        margin-bottom 0
+
+    img
+      margin 8px 0
+
+  p.demo
+    padding 1rem 1.5rem
+    border 1px solid #ddd
+    border-radius 4px
+
+  img
+    max-width 100%
+
+a
+  font-weight 500
+  color $accentColor
+  text-decoration none
+
+kbd
+  background #eee
+  border solid 0.15rem #ddd
+  border-bottom solid 0.25rem #ddd
+  border-radius 0.15rem
+  padding 0 0.15em
+
+blockquote
+  font-size .9rem
+  border-left .2rem solid $nprogressColor
+  background #c5c5c5
+  margin 1rem 0
+  padding .5rem 1rem
+  border-radius 0 4px 4px 0
+
+ul, ol
+  padding-left 1.2em
+  line-height 1.5
+
+  li
+    margin 6px 0
+
+strong
+  font-weight 600
+
+h1, h2, h3, h4, h5, h6
+  word-break break-word
+  font-weight 600
+  line-height 1.25
+
+  {$contentClass} > &
+    margin-top (0.5rem - $navbarHeight)
+    padding-top ($navbarHeight + 1rem)
+    margin-bottom 0
+
+    &:first-child
+      margin-top -1.5rem
+      margin-bottom 1rem
+
+      + p, + pre
+        margin-top 2rem
+
+a.header-anchor
+  display none
+
+hr
+  border 0
+  border-top 1px solid $borderColor
+
+p
+  line-height 1.5
+  word-break break-word
+
+  img
+    display block
