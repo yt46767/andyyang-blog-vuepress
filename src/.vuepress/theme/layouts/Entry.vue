@@ -1,5 +1,6 @@
 <template>
 <div>
+  <h3 class="header py-3 mb-4">最近更新内容</h3>
   <div
     v-for="(item, index) in newestDocs" :key="index"
     :class="{ 'rounded': !$vuetify.breakpoint.mobile }"
@@ -45,6 +46,11 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
+.header 
+  max-width: 740px;
+  margin: 0 auto;
+  color: #fff;
+
 .theme-default-content
 
   .description

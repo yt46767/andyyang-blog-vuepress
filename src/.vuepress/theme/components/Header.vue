@@ -23,7 +23,7 @@
         <v-avatar class="mr-2" size="36">
           <img :src="require('../assets/images/me.png')" alt="mulinzi">
         </v-avatar>
-        <span>木林子</span>
+        <span>Andyyang</span>
         <v-icon>mdi-chevron-down</v-icon>
       </v-btn>
     </template>
@@ -31,11 +31,11 @@
       <v-list>
         <v-list-item>
           <v-list-item-avatar class="white--text" color="primary">
-            <span>木</span>
+            <span>A</span>
           </v-list-item-avatar>
           <v-list-item-content>
-            <v-list-item-title>mulinzi(Peter)</v-list-item-title>
-            <v-list-item-subtitle>Life is but a span,but i get div every day</v-list-item-subtitle>
+            <v-list-item-title>Andyyang</v-list-item-title>
+            <v-list-item-subtitle>一天不动脑，心里不踏实！</v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -46,14 +46,14 @@
             <v-icon>mdi-at</v-icon>
           </v-list-item-avatar>
           <v-list-item-title>
-            <a href="Mailto:mulinzi1991@yeah.net">mulinzi1991@yeah.net</a>
+            <a href="Mailto:467675016@qq.com">467675016@qq.com</a>
           </v-list-item-title>
         </v-list-item>
         <v-list-item>
           <v-list-item-avatar>
             <v-icon>mdi-home</v-icon>
           </v-list-item-avatar>
-          <v-list-item-content>深圳--黄冈--武汉</v-list-item-content>
+          <v-list-item-content>深圳</v-list-item-content>
         </v-list-item>
         <v-list-item>
           <v-list-item-avatar>
@@ -66,9 +66,9 @@
                 :autoStart="false"
                 :duration="6"
                 :endVal="9"
-                :startVal="6">
+                :startVal="9">
               </count-up>
-              <span>0后阳光男孩，前端一枚</span>
+              <span>0后阳光开朗男孩，前端一枚</span>
             </div>
           </v-list-item-content>
         </v-list-item>

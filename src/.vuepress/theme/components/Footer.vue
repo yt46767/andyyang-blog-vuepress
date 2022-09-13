@@ -15,7 +15,7 @@
     <p>
       Copyright
       <v-icon class="s-icon">mdi-copyright</v-icon>
-      <span>{{ `2009-${new Date().getFullYear()} 木林子` }}</span>
+      <span>{{ `2009-${new Date().getFullYear()} Andyyang` }}</span>
     </p>
     <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42112702000096" target="_blank">
       <img class="mr-1" src="../assets/images/filing.png" style="vertical-align: bottom"/>鄂公网安备42112702000096号

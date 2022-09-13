@@ -9,9 +9,9 @@ const issueConfig = {
 const baiduAnalytics = require('./plugins/baiduAnalytics')
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 module.exports = {
-  base: '/my-blog-vuepress2/',
+  // base: '/my-blog-vuepress2/',
   dest: resolve('../../docs'),
-  title: '木林子的笔记空间',
+  title: 'Andyyang的笔记空间',
   description: 'My note space build with vuepress',
   locales: {
     '/': {
