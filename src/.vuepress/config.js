@@ -1,12 +1,9 @@
 const resolve = dir => require('path').join(__dirname, dir)
 const sideNav = require('./util/sideNav.js')
 const isProd = process.env.NODE_ENV === 'production'
-const issueConfig = {
-  repo: 'note',
-  clientId: 'de01e27a69cdede2a898',
-  clientSecret: 'b18db1776d565a67dc3010040770acc02635442f',
-}
 const baiduAnalytics = require('./plugins/baiduAnalytics')
+// import the api package for specific platform
+// const GiteeV5 = require('@vssue/api-gitee-v5')
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 module.exports = {
   // base: '/my-blog-vuepress2/',
@@ -121,14 +118,17 @@ module.exports = {
     ],
     [
       '@vssue/vuepress-plugin-vssue',
-      // huchaomin/note 必须为公开库
+      // yt46767/note 必须为公开库
       {
+        // set the platform api
+        // api: GiteeV5,
+        // platform: 'gitee',
         platform: 'github',
-        owner: 'huchaomin',
-        repo: issueConfig.repo,
+        owner: 'yt46767',
+        repo: 'note',
         prefix: '[comment]',
-        clientId: issueConfig.clientId,
-        clientSecret: issueConfig.clientSecret,
+        clientId: 'b470d603ce3c78d55ced990a97b6cfa0c02c9ad5123939698631d3feb4d055b4',
+        clientSecret: '2ce9350ef0400b2c3ee2c08b4b4ff488abe3d6c8e30b9bf36310a47c812a19e0',
         autoCreateIssue: isProd,
       },
     ],

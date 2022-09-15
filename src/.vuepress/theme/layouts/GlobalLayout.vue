@@ -151,7 +151,7 @@ export default {
     },
   },
   computed: {
-    layout () {debugger
+    layout () {
       if (this.$page.path) {
         if (this.$frontmatter.layout) {
           return this.$frontmatter.layout
@@ -189,12 +189,12 @@ export default {
     onScroll (e) {
       this.offsetTop = e.target.scrollTop
     },
-    centerDblclick () {debugger
+    centerDblclick () {
       this.showBreadcrumbs = !this.showBreadcrumbs
       this.toggleDrawer(this.showBreadcrumbs)
     },
     // 自定义右键菜单事件
-    contextmenu (e) {debugger
+    contextmenu (e) {
       e.preventDefault()
       this.x = e.clientX
       this.y = e.clientY
@@ -208,7 +208,7 @@ export default {
     globalMousedown () {
       this.showToggleBgMenu = false
     },
-    swipe (direction) {debugger
+    swipe (direction) {
       this.$bus.$emit('swipe', direction)
     },
   },

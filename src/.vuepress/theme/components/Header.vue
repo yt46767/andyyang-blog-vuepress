@@ -8,7 +8,7 @@
   <v-app-bar-nav-icon @click="$emit('toggleDrawer')"></v-app-bar-nav-icon>
   <v-spacer></v-spacer>
   <!-- 文档搜索组件 -->
-  <doc-search></doc-search>
+  <!-- <doc-search></doc-search> -->
   <!-- 下拉菜单 -->
   <v-menu
     v-model="showMyProfile"
@@ -68,7 +68,7 @@
                 :endVal="9"
                 :startVal="9">
               </count-up>
-              <span>0后阳光开朗男孩，前端一枚</span>
+              <span>0后、阳光开朗、前端工程师</span>
             </div>
           </v-list-item-content>
         </v-list-item>
@@ -76,7 +76,7 @@
           <v-list-item-avatar>
             <v-icon>mdi-heart</v-icon>
           </v-list-item-avatar>
-          <v-list-item-content>爬山，旧地旅行，钓鱼，晒女友</v-list-item-content>
+          <v-list-item-content>健身，写博客，看小说</v-list-item-content>
         </v-list-item>
         <v-list-item>
           <v-list-item-avatar>
@@ -108,12 +108,12 @@
 </v-app-bar>
 </template>
 <script>
-import DocSearch from './DocSearch.vue'
+// import DocSearch from './DocSearch.vue'
 
 export default {
-  components: {
-    DocSearch,
-  },
+  // components: {
+  //   DocSearch,
+  // },
   data () {
     return {
       showMyProfile: false,

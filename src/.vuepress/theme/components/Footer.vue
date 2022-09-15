@@ -17,10 +17,10 @@
       <v-icon class="s-icon">mdi-copyright</v-icon>
       <span>{{ `2009-${new Date().getFullYear()} Andyyang` }}</span>
     </p>
-    <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42112702000096" target="_blank">
+    <!-- <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42112702000096" target="_blank">
       <img class="mr-1" src="../assets/images/filing.png" style="vertical-align: bottom"/>鄂公网安备42112702000096号
     </a>
-    <a class="ml-2" href="https://beian.miit.gov.cn/" target="_blank">鄂ICP备2022000181号-1</a>
+    <a class="ml-2" href="https://beian.miit.gov.cn/" target="_blank">鄂ICP备2022000181号-1</a> -->
   </div>
   <div v-if="$page.lastUpdated">
     最后更新时间
