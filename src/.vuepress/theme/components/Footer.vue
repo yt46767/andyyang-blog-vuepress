@@ -4,14 +4,14 @@
   app
   class="d-flex pr-3 justify-space-between"
   padless>
-  <v-btn
+  <!-- <v-btn
     depressed
     icon
     x-large
     @click="toRoot">
     <v-icon>mdi-home</v-icon>
-  </v-btn>
-  <div class="copyright">
+  </v-btn> -->
+  <div class="copyright ml-3">
     <p>
       Copyright
       <v-icon class="s-icon">mdi-copyright</v-icon>
@@ -31,14 +31,14 @@
 </template>
 <script>
 export default {
-  methods: {
-    toRoot () {
-      if (this.$route.path === '/') return
-      this.$router.push({
-        path: '/',
-      })
-    },
-  },
+  // methods: {
+  //   toRoot () {
+  //     if (this.$route.path === '/') return
+  //     this.$router.push({
+  //       path: '/',
+  //     })
+  //   },
+  // },
 }
 </script>
 <style lang="stylus" scoped>

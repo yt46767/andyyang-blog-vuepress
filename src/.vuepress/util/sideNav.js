@@ -31,13 +31,13 @@ function getDocRouterPath (dirname, filename) {
     if (dir === '') {
       return '/'
     } else {
-      return `/${forwardSlashPath(dir)}/`
+      return encodeURI(`/${forwardSlashPath(dir)}/`)
     }
   } else {
     if (dir === '') {
-      return `/${name}.html`
+      return encodeURI(`/${name}.html`)
     } else {
-      return `/${forwardSlashPath(dir)}/${name}.html`
+      return encodeURI(`/${forwardSlashPath(dir)}/${name}.html`)
     }
   }
 }
@@ -51,7 +51,7 @@ function findFolder (dir) {
       const filePath = path.join(dir, file)
       const stat = fs.statSync(filePath)
       if (stat.isDirectory()) {
-        if (file === '.vuepress' || file === 'assets') continue
+        if (file === '.vuepress' || file === 'assets' || file === '0.探索') continue
         const o = {
           name: file,
           id: uniqueId('tree'),

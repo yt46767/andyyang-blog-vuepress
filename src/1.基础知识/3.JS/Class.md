@@ -1,0 +1,28 @@
+## Class
+
+ **类相当于实例的原型**，所有在**类中定义的方法**，都会**被实例继承**。
+
+类 = 原型 （prototype）
+
+https://www.csdn.net/tags/MtjaQgwsNTU3ODAtYmxvZwO0O0OO0O0O.html
+
+## static
+
++ 什么是static静态方法?
+
+  定义在类上的方法，但不能被实例继承。
+
+```
+    class Foo {
+      static classMethod() {
+        return 'hello';
+      }
+    }
+    // 正确
+    Foo.classMethod() // 输出结果是：'hello'
+    // 错误
+    var foo = new Foo();
+    foo.classMethod() // 输出结果是： TypeError: foo.classMethod is not a function
+```
+
+​		https://blog.csdn.net/weixin_45844049/article/details/120870122

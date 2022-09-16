@@ -17,6 +17,7 @@
     outlined
   ></v-text-field>
   <v-treeview
+    ref="treeview"
     :active.sync="active"
     :items="sideNav"
     :open.sync="open"
@@ -25,7 +26,7 @@
     hoverable
     open-on-click
     transition
-    @update:active="leafClick">
+    @update:active="leftMenuClick">
     <template v-slot:prepend="{ item, open }">
       <v-icon v-if="item.isDirectory">
         {{ open ? 'mdi-folder-open' : 'mdi-folder' }}
@@ -74,12 +75,29 @@ export default {
       active: [],
     }
   },
+  computed: {
+    searchTree () {
+      const { search, sideNav } = this;
+      return { search, sideNav };
+    }
+  },
   watch: {
     '$page': {
       handler () {
-        this.focusItem()
+        this.leftMenuChecked()
       },
       immediate: true,
+    },
+    searchTree: {
+        handler(newValue) {
+            if (newValue.search && newValue.sideNav) {debugger
+                this.$refs.treeview.updateAll(true);
+                // this.$refs.treeview.emitOpen();
+                // this.$refs.treeview.updateOpen();
+            }
+        },
+        deep: true,
+        immediate: true,
     },
   },
   methods: {
@@ -93,7 +111,7 @@ export default {
         this.show = flag
       }
     },
-    leafClick (itemArr) {
+    leftMenuClick (itemArr) {
       if (itemArr.length === 0) return
       const navObj = this.findNavObjByKey('id', itemArr[0])
       if (!navObj) return
@@ -101,7 +119,7 @@ export default {
       if (this.$page.regularPath === encodeURI(path)) return
       this.$router.push({ path })
     },
-    focusItem () {
+    leftMenuChecked () {
       const currentNavId = this.currentNavId
       if (currentNavId) {
         if (!this.active.includes(currentNavId)) {

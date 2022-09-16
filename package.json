@@ -10,7 +10,6 @@
   "dependencies": {
     "@docsearch/js": "3",
     "@mdi/font": "^6.5.95",
-    "@vssue/api-gitee-v5": "^1.4.7",
     "@vssue/api-github-v3": "^1.4.7",
     "@vssue/vuepress-plugin-vssue": "^1.4.8",
     "countup.js": "^2.0.8",

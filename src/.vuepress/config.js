@@ -2,12 +2,12 @@ const resolve = dir => require('path').join(__dirname, dir)
 const sideNav = require('./util/sideNav.js')
 const isProd = process.env.NODE_ENV === 'production'
 const baiduAnalytics = require('./plugins/baiduAnalytics')
-// import the api package for specific platform
-// const GiteeV5 = require('@vssue/api-gitee-v5')
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 module.exports = {
-  // base: '/my-blog-vuepress2/',
-  dest: resolve('../../docs'),
+  temp: './src/.vuepress/temp/',
+  tempPath: './temp/',
+  // base: '/Blog/',
+  dest: resolve('../../dist'),
   title: 'Andyyang的笔记空间',
   description: 'My note space build with vuepress',
   locales: {
@@ -127,8 +127,8 @@ module.exports = {
         owner: 'yt46767',
         repo: 'note',
         prefix: '[comment]',
-        clientId: 'b470d603ce3c78d55ced990a97b6cfa0c02c9ad5123939698631d3feb4d055b4',
-        clientSecret: '2ce9350ef0400b2c3ee2c08b4b4ff488abe3d6c8e30b9bf36310a47c812a19e0',
+        clientId: 'bcc03f8171b13e2105b4',
+        clientSecret: 'e40a3aa4fa78139ecd831b6525f798dd338a3cf9',
         autoCreateIssue: isProd,
       },
     ],

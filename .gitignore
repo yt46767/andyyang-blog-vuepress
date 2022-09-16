@@ -26,3 +26,6 @@ yarn.lock
 *.njsproj
 *.sln
 *.sw?
+
+src/0.探索/
+src/.vuepress/temp/
