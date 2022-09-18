@@ -28,7 +28,7 @@ https://www.cnblogs.com/interdrp/p/4211883.html
 ```
 <input type="checkbox" checked={state.allChecked} onChange={this.allCheckedChange.bind(this)}></input>
 
-allCheckedChange(event){debugger
+allCheckedChange(event){
     this.setState({
       allChecked: event.target.checked
     });

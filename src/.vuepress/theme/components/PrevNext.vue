@@ -77,7 +77,7 @@ export default {
     },
     toPage (page) {
       this.$router.push({
-        path: page.routerPath,
+        path: encodeURI(page.routerPath),
       })
     },
   },

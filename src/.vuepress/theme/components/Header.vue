@@ -7,13 +7,13 @@
   <!-- 目录按钮(折叠收缩菜单) -->
   <v-app-bar-nav-icon @click="$emit('toggleDrawer')"></v-app-bar-nav-icon>
   <!-- 首页按钮 -->
-  <v-btn
+  <!-- <v-btn
     depressed
     icon
     x-large
     @click="toRoot">
     <v-icon>mdi-home</v-icon>
-  </v-btn>
+  </v-btn> -->
   <v-spacer></v-spacer>
   <!-- 文档搜索组件 -->
   <!-- <doc-search></doc-search> -->
@@ -33,8 +33,8 @@
           <img :src="require('../assets/images/me.png')" alt="mulinzi">
         </v-avatar>
         <span class="pl-1 pr-1">Andyyang</span>
-        <span class="pr-11">&nbsp;</span>
-        <span class="pr-11">&nbsp;</span>
+        <!-- <span class="pr-11">&nbsp;</span>
+        <span class="pr-11">&nbsp;</span> -->
         <v-icon>mdi-chevron-down</v-icon>
       </v-btn>
     </template>
@@ -162,9 +162,13 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
+.v-btn:not(.v-btn--round).v-size--large 
+  padding: 0;
+
 .account-menu
-  border-left: 1px solid #d4d4d4;
-  border-radius: inherit;
+  // border-left: 1px solid #d4d4d4;
+  // border-radius: inherit;
+
 .v-list-item__subtitle
   white-space initial
 

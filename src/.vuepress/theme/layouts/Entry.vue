@@ -40,7 +40,7 @@ export default {
   methods: {
     toPage (page) {
       this.$router.push({
-        path: decodeURI(page.regularPath),
+        path: page.regularPath,
       })
     },
   },
@@ -53,6 +53,7 @@ export default {
   color: #fff;
 
 .theme-default-content
+  background: #fff;
 
   .description
     font-size 0.8em

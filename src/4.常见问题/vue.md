@@ -82,16 +82,18 @@ https://blog.csdn.net/l1996729/article/details/106354377/
 
 ## radio点击，同一个key想触发，怎么办？
 解决：
+```html
 <RadioGroup v-model="selectedRadio" @on-change="changeRadios"> 
-      <!-- <RadioGroup v-model="selectedRadio">  -->
-        <Radio 
-          v-for="item in radios" 
-          :key="item.label" 
-          @click.native.self="clickRadios($event, item.label)"
-          :label="item.label"> 
-          {{item.value}} 
-        </Radio> 
-      </RadioGroup>
+<!-- <RadioGroup v-model="selectedRadio">  -->
+  <Radio 
+    v-for="item in radios" 
+    :key="item.label" 
+    @click.native.self="clickRadios($event, item.label)"
+    :label="item.label"> 
+    {{item.value}} 
+  </Radio> 
+</RadioGroup>
+```
 .self，作用点击元素，阻止冒泡多次触发
 
 ## 动态引入

@@ -1,16 +1,21 @@
 <template>
+<!-- <v-footer
+  v-if="!$vuetify.breakpoint.mobile"
+  app
+  class="d-flex pr-3 justify-space-between pt-2 pb-2"
+  padless> -->
 <v-footer
   v-if="!$vuetify.breakpoint.mobile"
   app
-  class="d-flex pr-3 justify-space-between"
+  class="d-flex pr-3 justify-space-between pt-2 pb-2"
   padless>
-  <!-- <v-btn
+  <v-btn
     depressed
     icon
-    x-large
+    x-middle
     @click="toRoot">
     <v-icon>mdi-home</v-icon>
-  </v-btn> -->
+  </v-btn>
   <div class="copyright ml-3">
     <p>
       Copyright
@@ -31,14 +36,14 @@
 </template>
 <script>
 export default {
-  // methods: {
-  //   toRoot () {
-  //     if (this.$route.path === '/') return
-  //     this.$router.push({
-  //       path: '/',
-  //     })
-  //   },
-  // },
+  methods: {
+    toRoot () {
+      if (this.$route.path === '/') return
+      this.$router.push({
+        path: '/',
+      })
+    },
+  },
 }
 </script>
 <style lang="stylus" scoped>

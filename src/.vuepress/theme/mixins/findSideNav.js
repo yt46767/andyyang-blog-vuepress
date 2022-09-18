@@ -4,7 +4,7 @@ export default {
       return this.$site.themeConfig.sideNav
     },
     currentNavId () {
-      const currentPath = this.$page.regularPath
+      const currentPath = decodeURI(this.$page.regularPath)
       const currentNavObj = this.findNavObjByKey('routerPath', currentPath)
       return currentNavObj ? currentNavObj.id : null
     },
@@ -14,7 +14,7 @@ export default {
       const find = function (arr, k, v) {
         for (let i = 0; i < arr.length; i++) {
           const obj = arr[i]
-          if (encodeURI(obj[key]) === value) {
+          if (obj[key] === value) {
             return obj
           } else if (obj.children) {
             const result = find(obj.children, k, v)

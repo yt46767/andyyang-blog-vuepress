@@ -8,9 +8,11 @@ https://www.w3cschool.cn/microapp/microapp-9gyh367r.html
 
 ## 标签动态变量
 错误：
+```JavaScript
 data-clipboard-text="{{item.payaccount}}"
 正确：
 :data-clipboard-text="item.payaccount"
+```
 
 ## h5 file 预览
 https://www.zhihu.com/question/39471730

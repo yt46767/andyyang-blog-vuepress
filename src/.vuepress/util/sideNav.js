@@ -31,13 +31,13 @@ function getDocRouterPath (dirname, filename) {
     if (dir === '') {
       return '/'
     } else {
-      return encodeURI(`/${forwardSlashPath(dir)}/`)
+      return `/${forwardSlashPath(dir)}/`
     }
   } else {
     if (dir === '') {
-      return encodeURI(`/${name}.html`)
+      return `/${name}.html`
     } else {
-      return encodeURI(`/${forwardSlashPath(dir)}/${name}.html`)
+      return `/${forwardSlashPath(dir)}/${name}.html`
     }
   }
 }

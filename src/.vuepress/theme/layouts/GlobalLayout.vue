@@ -116,7 +116,8 @@ export default {
       ],
       x: 0,
       y: 0,
-      currentBg: 'chemicalMolecule',
+      // currentBg: 'chemicalMolecule', // 默认化学分子
+      currentBg: 'stars', // 满天繁星
       showToggleBgMenu: false,
       iframeSrc: '',
     }
@@ -132,7 +133,8 @@ export default {
         if (val === 'NotFound') {
           this.currentBg = 'theMatrix'
         } else {
-          this.currentBg = ''
+          // this.currentBg = '' // 默认渐变
+          this.currentBg = 'stars' // 满天繁星
         }
       },
       immediate: true,
@@ -215,6 +217,12 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
+.v-footer, .v-app-bar, .v-navigation-drawer, .breadcrumbs, .to-top 
+  background-color: #fff!important;
+
+.theme-default-content
+  background: #fff;
+
 iframe {
   position: absolute;
 }

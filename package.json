@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "vuepress dev src",
-    "build": "vuepress build src",
+    "dev": "vuepress dev src --no-cache",
+    "build": "node --max-old-space-size=10000 node_modules/vuepress/cli.js build src",
+    "buildsmalll": "vuepress build src",
     "publish": "npm run build && sh ./deploy.sh"
   },
   "dependencies": {

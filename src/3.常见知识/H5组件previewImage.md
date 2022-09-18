@@ -19,7 +19,7 @@
   12.3kb
 
 + 使用方法：
-
+```HTML
   <script src="dist/previewImage.min.js"></script>
   <script>
       var obj = {
@@ -28,7 +28,7 @@
           };
     previewImage.start(obj);
   </script>
-
+```
 + 兼容性：
 
   兼容android、ios

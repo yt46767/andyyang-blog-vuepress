@@ -1,6 +1,6 @@
 ## promise原理
 
-```
+```javascript
 function Promise(executor){ //executor执行器
     let self = this;
     self.status = 'pending'; //等待态

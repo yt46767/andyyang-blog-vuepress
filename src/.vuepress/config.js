@@ -4,9 +4,9 @@ const isProd = process.env.NODE_ENV === 'production'
 const baiduAnalytics = require('./plugins/baiduAnalytics')
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 module.exports = {
-  temp: './src/.vuepress/temp/',
-  tempPath: './temp/',
-  // base: '/Blog/',
+  // temp: './src/.vuepress/temp/',
+  // tempPath: './temp/',
+  base: '/Andyyang-Blog/',
   dest: resolve('../../dist'),
   title: 'Andyyang的笔记空间',
   description: 'My note space build with vuepress',
@@ -77,12 +77,12 @@ module.exports = {
           }]
         })
 
-        config.plugin('analyze').use(BundleAnalyzerPlugin,
-          [{
-            analyzerMode: 'static',
-            reportFilename: '../report.html',
-          }],
-        )
+        // config.plugin('analyze').use(BundleAnalyzerPlugin,
+        //   [{
+        //     analyzerMode: 'static',
+        //     reportFilename: '../report.html',
+        //   }],
+        // )
       }
     }
   },
@@ -94,6 +94,7 @@ module.exports = {
     },
   },
   plugins: [
+    // 文件会根据git提交的最后时间，得到this.$site.pages[n].lastUpdated。如果文件是新建没有提交，this.$site.pages[n]就没有lastUpdated属性。
     [
       '@vuepress/last-updated',
       {

@@ -52,5 +52,38 @@ base值结尾加/
 
 ![image-20220906220526368](https://gitee.com/yt46767/doc/raw/master/image-20220906220526368.png)
 
-## 中文路径，warning告警
+## vuepress 中文路径，warning告警
 encodeURI([路径])
+原因在于: 
+node_modules\@vuepress\core\lib\node\internal-plugins\routes.js
+
+```javascript
+const dncodedPath = decodeURIComponent(pagePath)
+if (dncodedPath !== pagePath) {
+  // Andyyang Fix: warning console [vue-router] Route with path "/3.常见知识/9.Python/" contains unencoded characters, make sure your path is correctly encoded before passing it to the router. Use encodeURI to encode static segments of your path.
+code += `,
+{
+   path: ${JSON.stringify(dncodedPath)},
+   redirect: ${JSON.stringify(pagePath)}
+}`
+
+.......
+
+
+const decodedRegularPath = decodeURIComponent(regularPath)
+
+if (decodedRegularPath !== pagePath) {
+   // Andyyang Fix: warning console [vue-router] Route with path "/3.常见知识/9.Python/" contains unencoded characters, make sure your path is correctly encoded before passing it to the router. Use encodeURI to encode static segments of your path.
+      code += `,
+{
+   path: ${JSON.stringify(decodedRegularPath)},
+   redirect: ${JSON.stringify(pagePath)}
+}`
+```
+
+解决：
+  code += `,
+  {
+    path: ${JSON.stringify(pagePath)},
+    redirect: ${JSON.stringify(pagePath)}
+  }`

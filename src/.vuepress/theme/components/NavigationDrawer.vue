@@ -90,10 +90,8 @@ export default {
     },
     searchTree: {
         handler(newValue) {
-            if (newValue.search && newValue.sideNav) {debugger
+            if (newValue.search && newValue.sideNav) {
                 this.$refs.treeview.updateAll(true);
-                // this.$refs.treeview.emitOpen();
-                // this.$refs.treeview.updateOpen();
             }
         },
         deep: true,
@@ -116,8 +114,8 @@ export default {
       const navObj = this.findNavObjByKey('id', itemArr[0])
       if (!navObj) return
       const path = navObj.routerPath
-      if (this.$page.regularPath === encodeURI(path)) return
-      this.$router.push({ path })
+      if (decodeURI(this.$page.regularPath) === path) return
+      this.$router.push({ path: encodeURI(path) })
     },
     leftMenuChecked () {
       const currentNavId = this.currentNavId

@@ -77,7 +77,7 @@ el.foo === undefined
    document.body.id = 'bb'
    document.body.getAttribute('id') // 'bb'
    ```
-   但是 input.value 的同步是单向的，只是 attribute --> property(textarea没测试)
+   但是 `input.value` 的同步是单向的，只是 attribute --> property(textarea没测试)
    ```javascript
    el.setAttribute('value', 'jjc')   // 修改特性  
    el.value === 'jjc'                // 属性也更新了    

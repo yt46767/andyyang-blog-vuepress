@@ -11,3 +11,19 @@
 
 https://www.zhihu.com/question/309220217/answer/586510407
 
+### Vetur can't find `tsconfig.json` or `jsconfig.json` in f:\blog\demo\note.
+2.在项目根目录创建jsconfig.json文件，加入代码：
+```javascript
+{
+    "include": [
+        "./src/*"
+    ]
+}
+```
+https://blog.csdn.net/hongc93/article/details/122811641
+
+## records.json: For performance reasons, document symbols have been limited to 5000 items. Use setting 'json.maxItemsComputed' to configure the limit.
+解决：
+通过快捷键ctrl+shift+p，打开setting.json。
+在json中添加一个设置："json.maxItemsComputed": 6000。
+https://blog.csdn.net/m0_47955692/article/details/108882603
