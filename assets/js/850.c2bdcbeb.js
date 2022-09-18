@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[850],{946:function(t,n,s){"use strict";s.r(n);var e=s(7),o=Object(e.a)({},(function(){var t=this._self._c;return t("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[t("p",[this._v("1.页面重构\n2.接口配置（DTO、MOCK）\n3.盲写页面\n4.自测")])])}),[],!1,null,null,null);n.default=o.exports}}]);
