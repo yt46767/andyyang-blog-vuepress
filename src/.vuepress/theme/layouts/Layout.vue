@@ -5,12 +5,12 @@
   <Content></Content>
   <v-spacer></v-spacer>
   <prev-next></prev-next>
-  <Vssue
+  <!-- <Vssue
     v-if="vssueId && !$vuetify.breakpoint.mobile"
     :key="vssueId"
     :options="{ locale: 'zh' }"
     :title="vssueId"
-    class="mt-10"/>
+    class="mt-10"/> -->
 </div>
 </template>
 <script>
@@ -20,10 +20,10 @@ export default {
   components: {
     PrevNext,
   },
-  computed:{
-    vssueId () {
-      return this.$page.frontmatter.date
-    }
-  }
+  // computed:{
+  //   vssueId () {
+  //     return this.$page.frontmatter.date
+  //   }
+  // }
 }
 </script>

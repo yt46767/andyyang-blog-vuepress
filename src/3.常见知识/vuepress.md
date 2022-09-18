@@ -23,3 +23,9 @@ https://doc.xugaoyi.com/pages/db78e2/#%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90
 ## vuepress的UI组件库——Vuetify
 
 https://www.wenjiangs.com/doc/n7j2lhclks
+
+## 评论插件
+node:12
+package.json安装
+    "@vssue/api-github-v3": "^1.4.7",
+    "@vssue/vuepress-plugin-vssue": "^1.4.8",

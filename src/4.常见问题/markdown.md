@@ -3,6 +3,7 @@
 工具：https://github.com/littleboyfury/reformat-markdown-table
 
 ## allocation failure scavenge might not succeed
+```
 <--- Last few GCs --->
 
 [21988:000002143F4E15A0]   234720 ms: Mark-sweep 2015.4 (2078.9) -> 2005.6 (2082.4) MB, 528.0 / 0.1 ms  (average mu = 0.161, current mu = 0.087) allocation failure scavenge might not succeed
@@ -37,6 +38,7 @@ Node.js report completed
 13: 00007FF72D0A2A5D public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+567949
 14: 00007FF72D0F5082 public: virtual bool __cdecl v8::internal::SetupIsolateDelegate::SetupHeap(class v8::internal::Heap * __ptr64) __ptr64+905394
 15: 000001AC25376109
+```
 原因是：
 md文件转html文件时，很多html标签，js写法，``里包裹的脚本，在转换过程中，变成可执行脚本导致js报错
 解决：

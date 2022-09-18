@@ -117,22 +117,22 @@ module.exports = {
         copyOptions: false,
       },
     ],
-    [
-      '@vssue/vuepress-plugin-vssue',
-      // yt46767/note 必须为公开库
-      {
-        // set the platform api
-        // api: GiteeV5,
-        // platform: 'gitee',
-        platform: 'github',
-        owner: 'yt46767',
-        repo: 'andyyang-blog-vuepress',
-        prefix: '[comment]',
-        clientId: 'bcc03f8171b13e2105b4',
-        clientSecret: '692d64b96f86a154780fc591e77cba6c25b31bc6',
-        autoCreateIssue: isProd,
-      },
-    ],
+    // [
+    //   '@vssue/vuepress-plugin-vssue',
+    //   // yt46767/note 必须为公开库
+    //   {
+    //     // set the platform api
+    //     // api: GiteeV5,
+    //     // platform: 'gitee',
+    //     platform: 'github',
+    //     owner: 'yt46767',
+    //     repo: 'andyyang-blog-vuepress',
+    //     prefix: '[comment]',
+    //     clientId: 'bcc03f8171b13e2105b4',
+    //     clientSecret: '692d64b96f86a154780fc591e77cba6c25b31bc6',
+    //     autoCreateIssue: isProd,
+    //   },
+    // ],
     // [
     //   '@vuepress/google-analytics',
     //   {
