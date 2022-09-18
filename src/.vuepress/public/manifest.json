@@ -1,9 +1,9 @@
 {
-  "short_name": "Andyyang的笔记空间",
-  "name": "Andyyang的笔记",
+  "short_name": "andy的博客",
+  "name": "andy的博客",
   "lang": "zh-Hans",
   "description": "My note space build with vuepress",
-  "start_url": "www.mulinzi.cn",
+  "start_url": "yt46767.github.io/andyyang-blog-vuepress",
   "background_color": "rgba(255, 255, 255, 0.95)",
   "theme_color": "rgba(255, 255, 255, 0.95)",
   "dir": "ltr",

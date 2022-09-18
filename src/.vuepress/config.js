@@ -8,7 +8,7 @@ module.exports = {
   // tempPath: './temp/',
   base: '/andyyang-blog-vuepress/',
   dest: resolve('../../dist'),
-  title: 'Andyyang的笔记空间',
+  title: 'andy的博客',
   description: 'My note space build with vuepress',
   locales: {
     '/': {

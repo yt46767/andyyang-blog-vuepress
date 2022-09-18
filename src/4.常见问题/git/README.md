@@ -159,3 +159,11 @@ cd .git      // 进入.git目录
 vim config   // 修改config配置文件，快速找到remote "origin"下面的url并替换即可实现快速关联和修改
 
 https://blog.csdn.net/halo1416/article/details/123566471
+
+## github仓库,设置public公开/private私有
+第一步：
+![image](1.png)  
+第二步：
+![image](2.png)
+方法：
+https://blog.csdn.net/long_songs/article/details/121731546
