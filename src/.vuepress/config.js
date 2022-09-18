@@ -6,7 +6,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 module.exports = {
   // temp: './src/.vuepress/temp/',
   // tempPath: './temp/',
-  base: '/Andyyang-Blog/',
+  base: '/andyyang-blog-vuepress/',
   dest: resolve('../../dist'),
   title: 'Andyyang的笔记空间',
   description: 'My note space build with vuepress',
