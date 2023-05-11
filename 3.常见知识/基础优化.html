@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>wa上报设计 | andy的博客</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/andyyang-blog-vuepress/favicon.ico">
+    <link rel="manifest" href="/andyyang-blog-vuepress/manifest.json">
+    <link rel="apple-touch-icon" href="/andyyang-blog-vuepress/andyyang-blog-vuepress/icons/icon-152x152.png">
+    <link rel="preconnect" href="https://ZHEDSTO6YB-dsn.algolia.net" crossorigin="true">
+    <meta name="description" content="My note space build with vuepress">
+    <meta property="article:modified_time" content="2022-09-18T09:05:14.000Z">
+    <meta property="og:site_name" content="andy的博客">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/3.%E5%B8%B8%E8%A7%81%E7%9F%A5%E8%AF%86/%E5%9F%BA%E7%A1%80%E4%BC%98%E5%8C%96.html">
+    <meta name="twitter:url" content="/3.%E5%B8%B8%E8%A7%81%E7%9F%A5%E8%AF%86/%E5%9F%BA%E7%A1%80%E4%BC%98%E5%8C%96.html">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="mulinzi">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="theme-color" content="rgba(255, 255, 255, 0.95)">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/andyyang-blog-vuepress/icons/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/andyyang-blog-vuepress/assets/css/356.styles.7f5b43fa.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/chunk-default.21cc7129.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/css/0.styles.2729282c.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/vendors~app.911457c4.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/css/styles.bdb43170.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/app.77efb429.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/css/369.styles.5ba6a8df.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/369.8ae23cd4.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/966.250b024a.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/css/364.styles.875f7ca2.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/364.6411275a.js" as="script">
+    <link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/356.styles.7f5b43fa.css"><link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/0.styles.2729282c.css"><link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/styles.bdb43170.css"><link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/369.styles.5ba6a8df.css"><link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/364.styles.875f7ca2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div data-app="true" id="doc" class="v-application v-application--is-ltr theme--light" data-v-85cb3d8a><div class="v-application--wrap"><!----> <header class="v-sheet theme--light elevation-0 v-toolbar v-toolbar--dense v-app-bar v-app-bar--clipped" style="height:48px;margin-top:0px;transform:translateY(0px);left:0px;right:0px;" data-v-7a69d0a6 data-v-85cb3d8a><div class="v-toolbar__content" style="height:48px;"><button type="button" class="v-app-bar__nav-icon v-btn v-btn--icon v-btn--round theme--light v-size--default" data-v-7a69d0a6><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate mdi mdi-menu theme--light" data-v-7a69d0a6></i></span></button> <div class="spacer" data-v-7a69d0a6></div> <div class="v-menu" data-v-7a69d0a6><button type="button" class="account-menu v-btn v-btn--text theme--light v-size--large" data-v-7a69d0a6><span class="v-btn__content"><div class="v-avatar mr-2" style="height:36px;min-width:36px;width:36px;" data-v-7a69d0a6><img src="/andyyang-blog-vuepress/assets/img/me.f91f18c4.png" alt="mulinzi" data-v-7a69d0a6></div> <span class="pl-1 pr-1" data-v-7a69d0a6>Andyyang</span> <i aria-hidden="true" class="v-icon notranslate mdi mdi-chevron-down theme--light" data-v-7a69d0a6></i></span></button><!----></div></div></header> <nav class="v-navigation-drawer v-navigation-drawer--clipped v-navigation-drawer--close v-navigation-drawer--fixed v-navigation-drawer--is-mobile theme--light" style="height:100vh;top:0px;transform:translateX(-100%);width:300px;" data-v-67c32539 data-v-85cb3d8a><div class="v-navigation-drawer__content"><div class="v-input mx-2 mt-3 v-input--hide-details v-input--dense theme--light v-text-field v-text-field--enclosed v-text-field--outlined" data-v-67c32539><div class="v-input__control"><div class="v-input__slot"><fieldset aria-hidden="true"><legend style="width:0px;"><span class="notranslate">&#8203;</span></legend></fieldset><div class="v-text-field__slot"><label for="input-32927" class="v-label theme--light" style="left:0px;right:auto;position:absolute;">查找笔记文件</label><input id="input-32927" type="text"></div><div class="v-input__append-inner"><div></div></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--append"><i aria-hidden="true" class="v-icon notranslate mdi mdi-magnify theme--light"></i></div></div></div></div></div> <div class="v-treeview v-treeview--hoverable theme--light" data-v-67c32539><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            1.基础知识
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            2.进阶知识
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            3.常见知识
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            4.常见问题
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            5.图书馆
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            6.资源
+          </div></span></div></div></div><!----></div></div></div><div class="v-navigation-drawer__border"></div></nav> <main class="v-main" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;" data-v-85cb3d8a><div class="v-main__wrap"><!----> <div id="scroll-body" class="theme-container py-sm-10 py-0" data-v-85cb3d8a><div class="theme-default-content d-flex flex-column pa-sm-6 pa-2" data-v-85cb3d8a><div class="content__default"><h2 id="wa上报设计"><a href="#wa上报设计" class="header-anchor">#</a> wa上报设计</h2> <p><img src="https://gitee.com/yt46767/doc/raw/master/2021-02-03/601a410490597.png" alt="">
+注：生产wa数据（包含pv、uv）</p> <h2 id="上线项目快速排查问题-关键点"><a href="#上线项目快速排查问题-关键点" class="header-anchor">#</a> 上线项目快速排查问题[关键点]</h2> <p>在设置/个人中心/不起眼的地方，一定要有日志上传入口上传错误日志片段的功能。</p> <h2 id="微信小程序请求超时处理"><a href="#微信小程序请求超时处理" class="header-anchor">#</a> 微信小程序请求超时处理</h2> <p>1、在app.json加入一句</p> <div class="language- extra-class"><pre class="language-text"><code>&amp;quot;networkTimeout&amp;quot;: {
+&amp;quot;request&amp;quot;: 10000
+}
+</code></pre></div><p>注：设置超时时间，单位毫秒
+2、请求
+wx.request时超时会进入fail方法</p> <div class="language- extra-class"><pre class="language-text"><code>fail: function () {
+	wx.hideLoading();
+	wx.showModal({
+		title: '提示',
+		showCancel: false,
+		content: '请求超时，请退出重新扫码！',
+		success: function () {
+			wx.redirectTo({
+				url: '../scan/scan'
+			})
+		}
+	})
+}
+</code></pre></div><h2 id="wepy-cli忽略超过大于500kb-的文件的编译-no-cache"><a href="#wepy-cli忽略超过大于500kb-的文件的编译-no-cache" class="header-anchor">#</a> wepy-cli忽略超过大于500kb 的文件的编译——“--no-cache”</h2> <p>npm i wepy-compiler-babel@1.5.3 --save-dev
+wepy build --no-cache
+忽略超过大于500kb 的文件的编译</p> <h2 id="wepy框架-解构图"><a href="#wepy框架-解构图" class="header-anchor">#</a> wepy框架，解构图</h2> <p>https://juejin.cn/post/6844903490049818631
+<img src="https://gitee.com/yt46767/doc/raw/master/2021-02-02/60191bb77396e.png" alt=""></p> <h2 id="项目换肤"><a href="#项目换肤" class="header-anchor">#</a> 项目换肤</h2> <ul><li>第一种：css变量</li> <li>第二种：webpack-plugin</li></ul> <h2 id="脚本放body里最后面"><a href="#脚本放body里最后面" class="header-anchor">#</a> 脚本放body里最后面</h2> <p><img src="https://gitee.com/yt46767/doc/raw/master/image-20210707110013578.png" alt="image-20210707110013578"></p> <h2 id="jason-logger要搭配下载colors-moment"><a href="#jason-logger要搭配下载colors-moment" class="header-anchor">#</a> jason-logger要搭配下载colors,moment</h2> <h2 id="垫片"><a href="#垫片" class="header-anchor">#</a> 垫片</h2> <p>https://zhuanlan.zhihu.com/p/147083132</p> <p>参考webpack配置：(优于polyfill，且按需加载垫片函数)
+yarn add @babel/plugin-transform-runtime -D
+yarn add @babel/runtime-corejs3</p> <p>{
+&quot;presets&quot;: [
+[
+&quot;@babel/preset-env&quot;,
+{
+&quot;useBuiltIns&quot;: &quot;usage&quot;,
+&quot;debug&quot;: true
+}
+]
+],
+&quot;plugins&quot;: [
+[
+&quot;@babel/plugin-transform-runtime&quot;,
+{
+&quot;corejs&quot;: 3 // 指定 runtime-corejs 的版本，目前有 2 3 两个版本
+}
+]
+]
+}</p> <h2 id="webgl"><a href="#webgl" class="header-anchor">#</a> webGL</h2> <p>WebGL 是基于 Canvas 的 3D 框架。</p> <h2 id="ace-editor-的npm包"><a href="#ace-editor-的npm包" class="header-anchor">#</a> ace editor 的npm包：</h2> <p>https://www.npmjs.com/package/ace-builds
+仓库：
+https://github.com/ajaxorg/ace-builds
+<img src="https://images.gitee.com/uploads/images/2021/0423/163159_3abfbcbf_1779874.png" alt="输入图片说明" title="屏幕截图.png">
+如果require引入</p> <p>https://ace.c9.io/#higlighter</p> <h2 id="ace-代替-npm包-brace"><a href="#ace-代替-npm包-brace" class="header-anchor">#</a> ace 代替 npm包 brace</h2> <p>https://github.com/thlorenz/brace</p> <div class="language- extra-class"><pre class="language-text"><code>import * as ace from 'brace';
+import 'brace/mode/javascript';
+import 'brace/theme/monokai';
+
+const editor = ace.edit('javascript-editor');
+editor.getSession().setMode('ace/mode/javascript');
+editor.setTheme('ace/theme/monokai');
+</code></pre></div><h2 id="js技术贴"><a href="#js技术贴" class="header-anchor">#</a> js技术贴</h2> <p>https://www.yuque.com/pengjielee/learn/ta2nx7</p> <h2 id="共用同一个内存地址"><a href="#共用同一个内存地址" class="header-anchor">#</a> 共用同一个内存地址</h2> <p>对象/数组的数据类型的变量，互相指向，则共用同一个内存地址；</p> <p>其它数据类型的变量，则不会。</p> <h2 id="目录树-带-搜索-js-组件"><a href="#目录树-带-搜索-js-组件" class="header-anchor">#</a> 目录树 带 搜索 js 组件</h2> <ul><li><p>ztree.js</p> <p>简单demo及源码</p> <p>http://www.ijquery.cn/?p=1560</p></li></ul> <h2 id="jquery插件大全"><a href="#jquery插件大全" class="header-anchor">#</a> jQuery插件大全</h2> <p>很好用</p> <p>https://www.shouce.ren/api/view/a/12507</p> <h2 id="easyui-内嵌-tabs-及-创建-右侧菜单-自定义"><a href="#easyui-内嵌-tabs-及-创建-右侧菜单-自定义" class="header-anchor">#</a> easyUI 内嵌 tabs 及 创建 右侧菜单 自定义</h2> <p>https://www.iteye.com/blog/kanpiaoxue-2212929</p> <p>有个bug，会关闭锁定的标签</p> <p>https://blog.csdn.net/zwj1030711290/article/details/54316202</p> <p>简单优化：</p> <div class="language- extra-class"><pre class="language-text"><code>//新增标签页
+        $(&quot;#add&quot;).bind(&quot;click&quot;,function(){
+                var tab = $('#tab').tabs('getSelected');
+                var index = $('#tab').tabs('getTabIndex',tab);
+                if(index !== 0)$('#tab').tabs('close',index);
+        });
+    //关闭当前标签页
+        $(&quot;#closeCurrent&quot;).bind(&quot;click&quot;,function(){
+                var tab = $('#tab').tabs('getSelected');
+                var index = $('#tab').tabs('getTabIndex',tab);
+                if(index !== 0)$('#tab').tabs('close',index);
+        });
+        //关闭所有标签页
+        $(&quot;#closeAll&quot;).bind(&quot;click&quot;,function(){
+                var tablist = $('#tab').tabs('tabs');
+                for(var i=tablist.length-1;i&gt;=0;i--){
+                        if(i !== 0) $('#tab').tabs('close',i);
+                }
+        });
+        //关闭非当前标签页（先关闭右侧，再关闭左侧）
+        $(&quot;#closeOther&quot;).bind(&quot;click&quot;,function(){
+                var tablist = $('#tab').tabs('tabs');
+                var tab = $('#tab').tabs('getSelected');
+                var index = $('#tab').tabs('getTabIndex',tab);
+                for(var i=tablist.length-1;i&gt;index;i--){
+                        $('#tab').tabs('close',i);
+                }
+                var num = index-1;
+                for(var i=num;i&gt;0;i--){
+                        $('#tab').tabs('close',1);
+                }
+        });
+        //关闭当前标签页右侧标签页
+        $(&quot;#closeRight&quot;).bind(&quot;click&quot;,function(){
+                var tablist = $('#tab').tabs('tabs');
+                var tab = $('#tab').tabs('getSelected');
+                var index = $('#tab').tabs('getTabIndex',tab);
+                for(var i=tablist.length-1;i&gt;index;i--){
+                        $('#tab').tabs('close',i);
+                }
+        });
+        //关闭当前标签页左侧标签页
+        $(&quot;#closeLeft&quot;).bind(&quot;click&quot;,function(){
+                var tab = $('#tab').tabs('getSelected');
+                var index = $('#tab').tabs('getTabIndex',tab);
+                var num = index-1;
+                for(var i=0;i&lt;=num;i++){
+                        if(i !== 0) $('#tab').tabs('close',1);
+                }
+        });
+</code></pre></div><h2 id="html-转-pdf"><a href="#html-转-pdf" class="header-anchor">#</a> html 转 pdf</h2> <p>jspdf-html2canvas</p> <p>使用例子：
+https://www.jianshu.com/p/4dde368cd25c</p> <p>jspdf + html2canvas</p> <p>https://blog.csdn.net/zyq19930325/article/details/88172639</p> <p>清晰处理：https://blog.csdn.net/NaXieNianWoMenYiQ/article/details/105431303</p> <h2 id="html-转-base64-图片"><a href="#html-转-base64-图片" class="header-anchor">#</a> html 转 base64 图片</h2> <p>https://www.cnblogs.com/louis-sun/p/6820513.html</p> <h2 id="压缩工具"><a href="#压缩工具" class="header-anchor">#</a> 压缩工具</h2> <p>https://tinypng.com/</p> <h2 id="图片大小优化"><a href="#图片大小优化" class="header-anchor">#</a> 图片大小优化</h2> <p>png8替代png24,png24替代png32
+大图用webp，降级到png</p> <h2 id="ajax-优于-javascript"><a href="#ajax-优于-javascript" class="header-anchor">#</a> ajax 优于 javascript</h2> <table><thead><tr><th>主题</th> <th>介绍</th> <th>备注</th> <th>文章</th></tr></thead> <tbody><tr><td>ajax 优于 javascript</td> <td></td> <td></td> <td>https://blog.csdn.net/sunshine940326/article/details/53536535?locationNum=3&amp;fps=1</td></tr></tbody></table> <h2 id="预加载"><a href="#预加载" class="header-anchor">#</a> 预加载</h2> <table><thead><tr><th>主题</th> <th>介绍</th> <th>备注</th> <th>文章</th></tr></thead> <tbody><tr><td>预加载</td> <td></td> <td></td> <td>https://blog.csdn.net/jiegeng2233/article/details/54631495</td></tr></tbody></table> <h2 id="预备加载动画"><a href="#预备加载动画" class="header-anchor">#</a> 预备加载动画</h2> <ul><li>启动 引导页 开机动画</li></ul> <h2 id="调试"><a href="#调试" class="header-anchor">#</a> 调试</h2> <ul><li><p>调试方法</p> <ul><li><p>前端 调试 方法</p> <p>在前端开发中，调试技术是必不可少的技能，本文将介绍五种前端开发必备的调试技术。</p> <ol><li>Weinre移动调试</li> <li>DOM 断点</li> <li>debugger断点</li> <li>native方法hook</li> <li>远程映射本地调试</li></ol> <p>https://segmentfault.com/a/1190000000340291</p></li> <li><p>iphone</p> <ul><li><p>chales抓包</p> <ul><li><p>iphone , chales 抓包</p> <p>iphone设置dns</p></li></ul></li> <li><p>iphone的ipa包调试</p> <ul><li><p>ipa，安装不上</p> <p>你的手机没被添加到证书里去，安装不了ipa</p></li></ul></li> <li><p>iphone真机调试</p> <ul><li><p>ipa ， 内测包 , 安装 到 iphone</p> <p>安装到 iphone  ，用pp助手 mac版本</p> <p>http://pro.25pp.com/</p> <p>酷狗音乐的ipa:</p> <p>https://pan.baidu.com/share/link?uk=3948095488&amp;shareid=824459770</p> <p>（坏的ipa）</p></li> <li><p>iphone， safari，真机 调试</p> <p><strong>iOS 设备真机调试</strong></p> <p>模拟器已经足够强大方便了，但有些手势操作测试以及最真实的用户体验测试还是需要真机。Safari 调试真机上的网页也是非常简单的。</p> <p>（1）首先需要在 iPhone 等设备上设置一下 Safari 浏览器，开启调试功能。具体步骤：“设置”-》“Safari”-》“高级”-》“Web 检查器”。</p> <p>（2）使用数据线连接电脑，在设备上用 Safari 浏览器打开需要调试的页面，之后在桌面版的 Safari 开发选项中即可看到进行调试，跟用 iOS Simulator 一样，只不过现在换成了真机。</p> <p>（3）但是调试本地网站，你可能要将手机与电脑连在一个局域网内，然后开启一个局域网 IP 的服务器进行调试，稍微麻烦。</p> <p>此外 Safari 还可以调试在 iOS 上面的 WebView，比如用调试 PhoneGap 打包的 APP 等，方法类似，这里 还有个测试用 APP，会 iOS 开发的朋友可以看下。</p> <p>参考：</p> <p>https://www.leiphone.com/news/201406/ios-safari-remote-debugging.html</p></li></ul></li></ul></li> <li><p>android</p> <ul><li><p>chrome有线调试</p> <p>chrome访问：chrome://inspect/#devices</p></li> <li><p>vorlon远程调试</p> <p>http://ju.outofmemory.cn/entry/235169</p></li> <li><p>chrome无线调试</p> <p>https://developer.android.com/studio/command-line/adb.html#wireless</p> <p>用adb指令，监听5555端口</p></li></ul></li></ul></li> <li><p>调试工具</p> <ul><li><p>调试工具 Weinre</p> <p>Weinre 是一款较老的远程调试工具，功能与 Chrome DevTools 相似，需要在页面中插入一段 JS 脚本来实时调试页面 DOM 结构、样式、JS 等，另外它使用的是代理的方式，所以兼容性很好，无论是新老设备系统通吃，但对于样式调试不友善，缺少断点调试及 Profiles 等常用功能。</p> <p>https://aotu.io/notes/2017/02/24/Mobile-debug/index.html</p></li></ul></li></ul> <h2 id="ios"><a href="#ios" class="header-anchor">#</a> ios</h2> <ul><li><p>iphone x 兼容</p> <p>https://segmentfault.com/a/1190000013830928</p> <p>一键解决：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover&quot;/&gt;
+</code></pre></div></li> <li><p>ios ，uiwebview , safari ， 远程 调试</p> <p>http://www.cnblogs.com/muyushifang07/p/5412956.html</p> <p>前提：</p> <p>app软件，要把iphone的uid码给IOS开发人员</p> <p>由开发人员生成app软件，发给H5开发人员</p></li> <li><p>未受信任的企业级开发者怎么解决</p> <p>http://jingyan.baidu.com/article/335530da83801c19cb41c39f.html</p></li></ul> <h2 id="android"><a href="#android" class="header-anchor">#</a> Android</h2> <ul><li><p>原生与js交互</p> <ul><li><p>原理</p> <ul><li><p>android 原生与js交互 原理</p> <p>(1) 在android里新建webview</p> <p>(2) 新建一个javascriptinterface对象</p> <p>(2) webview设置js可用</p> <p>(3) webview增加javascriptinterface，并以jsinterface对象暴露给js调用</p> <p>(4) 加载html页面</p> <p>(5) 定义jsinterface</p></li></ul></li></ul></li> <li><p>sdk</p> <ul><li><p>tool</p> <ul><li><p>Android sdk tool - manager 报错</p> <p>错误：</p> <p>Failed to fetch URL http://dl-ssl.google.com/android/repository/glass/addon.xml</p> <p>解决：</p> <p>解决国内访问Google服务器的困难：</p> <p>1.启动 Android SDK Manager ；</p> <p>2.打开主界面，依次选择「Tools」、「Options…」，弹出『Android SDK Manager – Settings』窗口；</p> <p>3.在『Android SDK Manager – Settings』窗口中，在「HTTP Proxy Server」和「HTTP Proxy Port」输入框内填入mirrors.neusoft.edu.cn搜索和80，并且选中「Force https://… sources to be fetched using http://…」复选框；4.设置完成后单击「Close」按钮关闭『Android SDK Manager – Settings』窗口返回到主界面；</p> <p>5.依次选择「Packages」、「Reload」。</p> <p>doc:</p> <p>http://www.cppblog.com/hlong/archive/2012/04/06/170311.html</p></li></ul></li> <li><p>doc</p> <ul><li><p>android sdk 文件夹 路径</p> <p>sdk工具</p> <p>F:\soft\android-sdk-windows\tools</p> <p>模拟器</p> <p>F:\soft\android-sdk-windows\platform-tools</p> <p>sdk</p> <p>F:\soft\android-sdk-windows</p></li></ul></li> <li><p>apk 文件 发送</p> <p>文件 格式 修改为：apk.1</p></li></ul></li> <li><p>eclipse 开发 android 环境</p></li> <li><p>cordova</p></li> <li><p>开发流程</p></li> <li><p>重点</p></li> <li><p>进阶</p></li> <li><p>基础</p></li> <li><p>错误</p></li></ul></div> <div class="spacer"></div> <div class="prev-next d-none d-sm-flex justify-space-between mt-9" data-v-cf01dfa6><button type="button" class="ml-n4 v-btn v-btn--plain theme--light v-size--default primary--text" data-v-cf01dfa6><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate v-icon--dense mdi mdi-arrow-left theme--light" data-v-cf01dfa6></i> <span data-v-cf01dfa6>图片图标</span></span></button> <div class="spacer" data-v-cf01dfa6 data-v-cf01dfa6></div> <button type="button" class="mr-n4 v-btn v-btn--plain theme--light v-size--default primary--text" data-v-cf01dfa6><span class="v-btn__content"><span data-v-cf01dfa6>大丰云</span> <i aria-hidden="true" class="v-icon notranslate v-icon--dense mdi mdi-arrow-right theme--light" data-v-cf01dfa6></i></span></button></div></div></div> <div class="v-menu" data-v-85cb3d8a><!----></div> <button type="button" class="to-top v-btn v-btn--bottom v-btn--is-elevated v-btn--fab v-btn--fixed v-btn--has-bg v-btn--right v-btn--round theme--light v-size--default" style="display:none;" data-v-85cb3d8a data-v-85cb3d8a><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate mdi mdi-arrow-expand-up theme--light primary--text" data-v-85cb3d8a></i></span></button></div></main> <!----></div></div><div class="global-ui"><div class="v-snack v-snack--bottom v-snack--has-background v-snack--right v-snack--vertical" style="padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;" data-v-fec8b358><div class="v-snack__wrapper v-sheet theme--dark" style="max-width:0px;display:none;"><div role="status" aria-live="polite" class="v-snack__content">
+    作者又有了新的笔记哟，点击刷新查看
+    </div><div class="v-snack__action "><button type="button" class="v-btn v-btn--text theme--dark v-size--default v-snack__btn"><span class="v-btn__content">
+        刷新
+      </span></button></div></div></div></div></div>
+    <script src="/andyyang-blog-vuepress/assets/js/chunk-default.21cc7129.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/369.8ae23cd4.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/966.250b024a.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/364.6411275a.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/vendors~app.911457c4.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/app.77efb429.js" defer></script>
+  </body>
+</html>

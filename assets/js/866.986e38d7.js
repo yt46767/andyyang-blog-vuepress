@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[866],{962:function(t,s,n){"use strict";n.r(s);var e=n(7),i=Object(e.a)({},(function(){var t=this._self._c;return t("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[t("p",[this._v("PMP计划型项目管理")]),this._v(" "),t("p",[this._v("ACP敏捷型项目管理")])])}),[],!1,null,null,null);s.default=i.exports}}]);

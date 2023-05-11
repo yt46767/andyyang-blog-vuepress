@@ -1,0 +1,80 @@
+{
+  "short_name": "andy的博客",
+  "name": "andy的博客",
+  "lang": "zh-Hans",
+  "description": "My note space build with vuepress",
+  "start_url": "yt46767.github.io/andyyang-blog-vuepress",
+  "background_color": "rgba(255, 255, 255, 0.95)",
+  "theme_color": "rgba(255, 255, 255, 0.95)",
+  "dir": "ltr",
+  "display": "standalone",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/andyyang-blog-vuepress/icons/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/andyyang-blog-vuepress/icons/icon-180x180.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "/andyyang-blog-vuepress/icons/icon-152x152.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "/andyyang-blog-vuepress/icons/icon-144x144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/andyyang-blog-vuepress/icons/icon-120x120.png",
+      "type": "image/png",
+      "sizes": "120x120"
+    },
+    {
+      "src": "/andyyang-blog-vuepress/icons/icon-114x114.png",
+      "type": "image/png",
+      "sizes": "114x114"
+    },
+    {
+      "src": "/andyyang-blog-vuepress/icons/icon-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/andyyang-blog-vuepress/icons/icon-76x76.png",
+      "type": "image/png",
+      "sizes": "76x76"
+    },
+    {
+      "src": "/andyyang-blog-vuepress/icons/icon-72x72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "/andyyang-blog-vuepress/icons/icon-60x60.png",
+      "type": "image/png",
+      "sizes": "60x60"
+    },
+    {
+      "src": "/andyyang-blog-vuepress/icons/icon-57x57.png",
+      "type": "image/png",
+      "sizes": "57x57"
+    },
+    {
+      "src": "/andyyang-blog-vuepress/icons/icon-32x32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "/andyyang-blog-vuepress/icons/icon-16x16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    }
+  ],
+  "prefer_related_applications": false
+}

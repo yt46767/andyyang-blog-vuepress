@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>类型 | andy的博客</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/andyyang-blog-vuepress/favicon.ico">
+    <link rel="manifest" href="/andyyang-blog-vuepress/manifest.json">
+    <link rel="apple-touch-icon" href="/andyyang-blog-vuepress/andyyang-blog-vuepress/icons/icon-152x152.png">
+    <link rel="preconnect" href="https://ZHEDSTO6YB-dsn.algolia.net" crossorigin="true">
+    <meta name="description" content="My note space build with vuepress">
+    <meta property="article:modified_time" content="2022-09-16T13:10:52.000Z">
+    <meta property="og:site_name" content="andy的博客">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/3.%E5%B8%B8%E8%A7%81%E7%9F%A5%E8%AF%86/16.Linux/">
+    <meta name="twitter:url" content="/3.%E5%B8%B8%E8%A7%81%E7%9F%A5%E8%AF%86/16.Linux/">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="mulinzi">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="theme-color" content="rgba(255, 255, 255, 0.95)">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/andyyang-blog-vuepress/icons/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/andyyang-blog-vuepress/assets/css/356.styles.7f5b43fa.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/chunk-default.21cc7129.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/css/0.styles.2729282c.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/vendors~app.911457c4.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/css/styles.bdb43170.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/app.77efb429.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/css/369.styles.5ba6a8df.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/369.8ae23cd4.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/832.b4d09073.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/css/364.styles.875f7ca2.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/364.6411275a.js" as="script">
+    <link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/356.styles.7f5b43fa.css"><link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/0.styles.2729282c.css"><link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/styles.bdb43170.css"><link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/369.styles.5ba6a8df.css"><link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/364.styles.875f7ca2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div data-app="true" id="doc" class="v-application v-application--is-ltr theme--light" data-v-85cb3d8a><div class="v-application--wrap"><!----> <header class="v-sheet theme--light elevation-0 v-toolbar v-toolbar--dense v-app-bar v-app-bar--clipped" style="height:48px;margin-top:0px;transform:translateY(0px);left:0px;right:0px;" data-v-7a69d0a6 data-v-85cb3d8a><div class="v-toolbar__content" style="height:48px;"><button type="button" class="v-app-bar__nav-icon v-btn v-btn--icon v-btn--round theme--light v-size--default" data-v-7a69d0a6><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate mdi mdi-menu theme--light" data-v-7a69d0a6></i></span></button> <div class="spacer" data-v-7a69d0a6></div> <div class="v-menu" data-v-7a69d0a6><button type="button" class="account-menu v-btn v-btn--text theme--light v-size--large" data-v-7a69d0a6><span class="v-btn__content"><div class="v-avatar mr-2" style="height:36px;min-width:36px;width:36px;" data-v-7a69d0a6><img src="/andyyang-blog-vuepress/assets/img/me.f91f18c4.png" alt="mulinzi" data-v-7a69d0a6></div> <span class="pl-1 pr-1" data-v-7a69d0a6>Andyyang</span> <i aria-hidden="true" class="v-icon notranslate mdi mdi-chevron-down theme--light" data-v-7a69d0a6></i></span></button><!----></div></div></header> <nav class="v-navigation-drawer v-navigation-drawer--clipped v-navigation-drawer--close v-navigation-drawer--fixed v-navigation-drawer--is-mobile theme--light" style="height:100vh;top:0px;transform:translateX(-100%);width:300px;" data-v-67c32539 data-v-85cb3d8a><div class="v-navigation-drawer__content"><div class="v-input mx-2 mt-3 v-input--hide-details v-input--dense theme--light v-text-field v-text-field--enclosed v-text-field--outlined" data-v-67c32539><div class="v-input__control"><div class="v-input__slot"><fieldset aria-hidden="true"><legend style="width:0px;"><span class="notranslate">&#8203;</span></legend></fieldset><div class="v-text-field__slot"><label for="input-23497" class="v-label theme--light" style="left:0px;right:auto;position:absolute;">查找笔记文件</label><input id="input-23497" type="text"></div><div class="v-input__append-inner"><div></div></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--append"><i aria-hidden="true" class="v-icon notranslate mdi mdi-magnify theme--light"></i></div></div></div></div></div> <div class="v-treeview v-treeview--hoverable theme--light" data-v-67c32539><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            1.基础知识
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            2.进阶知识
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            3.常见知识
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            4.常见问题
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            5.图书馆
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            6.资源
+          </div></span></div></div></div><!----></div></div></div><div class="v-navigation-drawer__border"></div></nav> <main class="v-main" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;" data-v-85cb3d8a><div class="v-main__wrap"><!----> <div id="scroll-body" class="theme-container py-sm-10 py-0" data-v-85cb3d8a><div class="theme-default-content d-flex flex-column pa-sm-6 pa-2" data-v-85cb3d8a><div class="content__default"><h2 id="类型"><a href="#类型" class="header-anchor">#</a> 类型</h2> <p><a href="#ubuntu">UBUNTU</a><br> <a href="#centos">CENTOS</a></p> <h2 id="ubuntu"><a href="#ubuntu" class="header-anchor">#</a> UBUNTU</h2> <h3 id="基础"><a href="#基础" class="header-anchor">#</a> 基础</h3> <h4 id="下载命令"><a href="#下载命令" class="header-anchor">#</a> 下载命令</h4> <p>apt-get ....</p> <h5 id="启动ssh"><a href="#启动ssh" class="header-anchor">#</a> 启动ssh</h5> <p>生成ssh key<br>
+root@f031e62c7661:/var/run/sshd### ssh-keygen -t rsa<br>
+Generating public/private rsa key pair.<br>
+Enter file in which to save the key (/root/.ssh/id_rsa):<br>
+Created directory '/root/.ssh'.<br>
+Enter passphrase (empty for no passphrase):<br>
+Enter same passphrase again:<br>
+Your identification has been saved in /root/.ssh/id_rsa.<br>
+Your public key has been saved in /root/.ssh/id_rsa.pub.<br>
+The key fingerprint is:<br>
+SHA256:YsGovhoCRsWf+JECJKkt8TrEYKi7HyRXIIukj6r2zoA root@f031e62c7661<br>
+The key's randomart image is:<br>
++---[RSA 2048]----+<br>
+|=+o.             |<br>
+|X=.o o           |<br>
+|X=. = =          |<br>
+|==o= = .         |<br>
+|=== o + S        |<br>
+|O=   o .         |<br>
+|E+o              |<br>
+|+ooo             |<br>
+|+o=+             |<br>
++----[SHA256]-----+<br>
+注意：<br>
+[fsmythe@example.com ~]$ /usr/bin/ssh-keygen -t dsa<br>
+Generating public/private dsa key pair.<br>
+Enter file in which to save the key (/home/fsmythe/.ssh/id_dsa):<br>
+Enter passphrase (empty for no passphrase): ****** (Enter 'mypassword')<br>
+Enter same passphrase again: ****** (Enter 'mypassword')<br>
+Your identification has been saved in /home/fsmythe/.ssh/id_dsa.<br>
+Your public key has been saved in /home/fsmythe/.ssh/id_dsa.pub.<br>
+The key fingerprint is:<br>
+33:af:35💿58:9c:11:91:0f:4a:0c:3a:d8:1f:0e:e6 fsmythe@example.com</p> <h4 id="修改sshd-config允许root登陆"><a href="#修改sshd-config允许root登陆" class="header-anchor">#</a> 修改sshd-config允许root登陆</h4> <p>sed -i 's+PermitRootLogin prohibit-password+PermitRootLogin yes' /etc/ssh/sshd-config<br>
+https://www.vediotalk.com/archives/606</p> <h4 id="ubuntu无脑操作直接开放root快速操作"><a href="#ubuntu无脑操作直接开放root快速操作" class="header-anchor">#</a> ubuntu无脑操作直接开放root快速操作</h4> <p>sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config<br>
+sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config<br>
+service ssh restart</p> <h4 id="进入ubuntu命令"><a href="#进入ubuntu命令" class="header-anchor">#</a> 进入ubuntu命令</h4> <p>docker exec -it  f031e62c7661 /bin/bash</p> <h4 id="启动sshd命令"><a href="#启动sshd命令" class="header-anchor">#</a> 启动sshd命令</h4> <p>/usr/sbin/sshd -D &amp;<br>
+或<br>
+service ssh start</p> <h4 id="linux-ssh连接本机"><a href="#linux-ssh连接本机" class="header-anchor">#</a> linux ssh连接本机</h4> <p>查看sshd启动状态：<br>
+service ssh status<br>
+否时，sshd启动命令<br>
+service ssh start<br>
+ssh连接<br>
+ssh root@127.0.0.1 -p 22</p> <h4 id="宿主机连接linux"><a href="#宿主机连接linux" class="header-anchor">#</a> 宿主机连接linux</h4> <p>ssh root@172.17.179.49 -p 10022<br>
+ssh root@172.17.0.2 -p 10022<br>
+ssh root@127.0.0.1 -p 10022</p> <h4 id="ubuntu安装ssh"><a href="#ubuntu安装ssh" class="header-anchor">#</a> ubuntu安装ssh</h4> <p>https://www.cnblogs.com/jie-fang/p/7928406.html<br>
+重要<br>
+https://www.cnblogs.com/gavin-guo/p/11461577.html<br>
+https://blog.csdn.net/weixin_33691598/article/details/92134075</p> <h4 id="ubuntu安装防火墙"><a href="#ubuntu安装防火墙" class="header-anchor">#</a> ubuntu安装防火墙</h4> <p>https://www.cnblogs.com/xwgcxk/p/10820518.html</p> <h3 id="问题"><a href="#问题" class="header-anchor">#</a> 问题</h3> <h4 id="docker的ubuntu镜像无ifconfig和ping-netstat命令"><a href="#docker的ubuntu镜像无ifconfig和ping-netstat命令" class="header-anchor">#</a> docker的ubuntu镜像无ifconfig和ping netstat命令</h4> <p>apt-get update<br>
+apt-get install net-tools<br>
+apt-get install iputils-ping<br>
+参考：<br>
+https://www.cnblogs.com/jifeng/p/9397304.html</p> <h4 id="docker-apt-get-update一直报错"><a href="#docker-apt-get-update一直报错" class="header-anchor">#</a> docker apt-get update一直报错</h4> <p>https://blog.csdn.net/qq_29422251/article/details/78488647</p> <h4 id="ssh免密登录-permission-deny-publickey-password"><a href="#ssh免密登录-permission-deny-publickey-password" class="header-anchor">#</a> ssh免密登录-permission deny(publickey,password)</h4> <ol><li>id_rsa.pub复制到authorized_keys(新文件)</li> <li>chmod -R 600 /root/.ssh</li></ol> <h4 id="解决ubuntu的ssh自动断线问题"><a href="#解决ubuntu的ssh自动断线问题" class="header-anchor">#</a> 解决Ubuntu的SSH自动断线问题</h4> <p>https://www.jianshu.com/p/f8d9f28b830e<br>
+https://www.cnblogs.com/daxin/p/5603837.html<br>
+https://blog.csdn.net/qq_21405949/article/details/52539686</p> <h4 id="ubuntu下-sshd-unrecognized-service"><a href="#ubuntu下-sshd-unrecognized-service" class="header-anchor">#</a> Ubuntu下&quot;sshd:unrecognized service&quot;</h4> <p>https://blog.csdn.net/u013015629/article/details/70045809</p> <h4 id="iptables-v1-6-1-can-t-initialize-iptables-table-filter-permission-denied-you-must-be-root"><a href="#iptables-v1-6-1-can-t-initialize-iptables-table-filter-permission-denied-you-must-be-root" class="header-anchor">#</a> iptables v1.6.1: can't initialize iptables table `filter': Permission denied (you must be root)</h4> <p>docker run -ti --privileged ubuntu:latest<br>
+docker run -ti --privileged zen_wozniak<br>
+参考：<br>
+https://blog.csdn.net/Magic_Ninja/article/details/88432140</p> <h4 id="ssh-exchange-identification-read-connection-reset-by-peer"><a href="#ssh-exchange-identification-read-connection-reset-by-peer" class="header-anchor">#</a> ssh_exchange_identification:read connection reset by peer</h4> <p>https://www.cnblogs.com/taoquns/p/9590960.html</p> <h2 id="centos"><a href="#centos" class="header-anchor">#</a> CENTOS</h2> <h3 id="基础-2"><a href="#基础-2" class="header-anchor">#</a> 基础</h3> <h4 id="实时监控日志"><a href="#实时监控日志" class="header-anchor">#</a> 实时监控日志</h4> <p>tail -f laravel.log<br>
+该条命令会输入laravel.log的变化，实现时时监控的目的</p> <h3 id="问题-2"><a href="#问题-2" class="header-anchor">#</a> 问题</h3> <h4 id="bash-lsof-command-not-found"><a href="#bash-lsof-command-not-found" class="header-anchor">#</a> -bash: lsof: command not found</h4> <p>解决：<br>
+yum install lsof<br>
+参考：<br>
+https://blog.csdn.net/cryhelyxx/article/details/43228423</p> <h4 id="bash-netstat-command-not-found"><a href="#bash-netstat-command-not-found" class="header-anchor">#</a> -bash: netstat: command not found</h4> <p>yum install net-tools<br>
+参考：<br>
+https://blog.csdn.net/slovyz/article/details/50386240</p></div> <div class="spacer"></div> <!----></div></div> <div class="v-menu" data-v-85cb3d8a><!----></div> <button type="button" class="to-top v-btn v-btn--bottom v-btn--is-elevated v-btn--fab v-btn--fixed v-btn--has-bg v-btn--right v-btn--round theme--light v-size--default" style="display:none;" data-v-85cb3d8a data-v-85cb3d8a><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate mdi mdi-arrow-expand-up theme--light primary--text" data-v-85cb3d8a></i></span></button></div></main> <!----></div></div><div class="global-ui"><div class="v-snack v-snack--bottom v-snack--has-background v-snack--right v-snack--vertical" style="padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;" data-v-fec8b358><div class="v-snack__wrapper v-sheet theme--dark" style="max-width:0px;display:none;"><div role="status" aria-live="polite" class="v-snack__content">
+    作者又有了新的笔记哟，点击刷新查看
+    </div><div class="v-snack__action "><button type="button" class="v-btn v-btn--text theme--dark v-size--default v-snack__btn"><span class="v-btn__content">
+        刷新
+      </span></button></div></div></div></div></div>
+    <script src="/andyyang-blog-vuepress/assets/js/chunk-default.21cc7129.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/369.8ae23cd4.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/832.b4d09073.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/364.6411275a.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/vendors~app.911457c4.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/app.77efb429.js" defer></script>
+  </body>
+</html>

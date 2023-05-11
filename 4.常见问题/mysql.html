@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>window Table &#39;mysql.user&#39; doesn&#39;t exist | andy的博客</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/andyyang-blog-vuepress/favicon.ico">
+    <link rel="manifest" href="/andyyang-blog-vuepress/manifest.json">
+    <link rel="apple-touch-icon" href="/andyyang-blog-vuepress/andyyang-blog-vuepress/icons/icon-152x152.png">
+    <link rel="preconnect" href="https://ZHEDSTO6YB-dsn.algolia.net" crossorigin="true">
+    <meta name="description" content="My note space build with vuepress">
+    <meta property="article:modified_time" content="2022-09-16T13:10:52.000Z">
+    <meta property="og:site_name" content="andy的博客">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/4.%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/mysql.html">
+    <meta name="twitter:url" content="/4.%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/mysql.html">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="mulinzi">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="theme-color" content="rgba(255, 255, 255, 0.95)">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/andyyang-blog-vuepress/icons/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/andyyang-blog-vuepress/assets/css/356.styles.7f5b43fa.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/chunk-default.21cc7129.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/css/0.styles.2729282c.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/vendors~app.911457c4.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/css/styles.bdb43170.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/app.77efb429.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/css/369.styles.5ba6a8df.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/369.8ae23cd4.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/1097.66850f7d.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/css/364.styles.875f7ca2.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/364.6411275a.js" as="script">
+    <link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/356.styles.7f5b43fa.css"><link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/0.styles.2729282c.css"><link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/styles.bdb43170.css"><link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/369.styles.5ba6a8df.css"><link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/364.styles.875f7ca2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div data-app="true" id="doc" class="v-application v-application--is-ltr theme--light" data-v-85cb3d8a><div class="v-application--wrap"><!----> <header class="v-sheet theme--light elevation-0 v-toolbar v-toolbar--dense v-app-bar v-app-bar--clipped" style="height:48px;margin-top:0px;transform:translateY(0px);left:0px;right:0px;" data-v-7a69d0a6 data-v-85cb3d8a><div class="v-toolbar__content" style="height:48px;"><button type="button" class="v-app-bar__nav-icon v-btn v-btn--icon v-btn--round theme--light v-size--default" data-v-7a69d0a6><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate mdi mdi-menu theme--light" data-v-7a69d0a6></i></span></button> <div class="spacer" data-v-7a69d0a6></div> <div class="v-menu" data-v-7a69d0a6><button type="button" class="account-menu v-btn v-btn--text theme--light v-size--large" data-v-7a69d0a6><span class="v-btn__content"><div class="v-avatar mr-2" style="height:36px;min-width:36px;width:36px;" data-v-7a69d0a6><img src="/andyyang-blog-vuepress/assets/img/me.f91f18c4.png" alt="mulinzi" data-v-7a69d0a6></div> <span class="pl-1 pr-1" data-v-7a69d0a6>Andyyang</span> <i aria-hidden="true" class="v-icon notranslate mdi mdi-chevron-down theme--light" data-v-7a69d0a6></i></span></button><!----></div></div></header> <nav class="v-navigation-drawer v-navigation-drawer--clipped v-navigation-drawer--close v-navigation-drawer--fixed v-navigation-drawer--is-mobile theme--light" style="height:100vh;top:0px;transform:translateX(-100%);width:300px;" data-v-67c32539 data-v-85cb3d8a><div class="v-navigation-drawer__content"><div class="v-input mx-2 mt-3 v-input--hide-details v-input--dense theme--light v-text-field v-text-field--enclosed v-text-field--outlined" data-v-67c32539><div class="v-input__control"><div class="v-input__slot"><fieldset aria-hidden="true"><legend style="width:0px;"><span class="notranslate">&#8203;</span></legend></fieldset><div class="v-text-field__slot"><label for="input-41044" class="v-label theme--light" style="left:0px;right:auto;position:absolute;">查找笔记文件</label><input id="input-41044" type="text"></div><div class="v-input__append-inner"><div></div></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--append"><i aria-hidden="true" class="v-icon notranslate mdi mdi-magnify theme--light"></i></div></div></div></div></div> <div class="v-treeview v-treeview--hoverable theme--light" data-v-67c32539><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            1.基础知识
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            2.进阶知识
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            3.常见知识
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            4.常见问题
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            5.图书馆
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            6.资源
+          </div></span></div></div></div><!----></div></div></div><div class="v-navigation-drawer__border"></div></nav> <main class="v-main" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;" data-v-85cb3d8a><div class="v-main__wrap"><!----> <div id="scroll-body" class="theme-container py-sm-10 py-0" data-v-85cb3d8a><div class="theme-default-content d-flex flex-column pa-sm-6 pa-2" data-v-85cb3d8a><div class="content__default"><h2 id="window-table-mysql-user-doesn-t-exist"><a href="#window-table-mysql-user-doesn-t-exist" class="header-anchor">#</a> window Table 'mysql.user' doesn't exist</h2> <p>找到my.ini中的datadir=C:/mysql/data
+把data目录下的文件全部清空
+执行mysqld --initialize-insecure --user=mysql 初始化
+执行mysqld --defaults-file=…/my.ini --console，看看是否能够启动</p> <p>https://blog.csdn.net/mxj588love/article/details/115945729</p> <h2 id="install-remove-of-the-service-denied"><a href="#install-remove-of-the-service-denied" class="header-anchor">#</a> Install/Remove of the Service Denied!</h2> <p>打开cmd.exe程序的时候选择“用管理员身份打开”</p> <h2 id="mysqld-error-found-option-without-preceding-group-in-config-file"><a href="#mysqld-error-found-option-without-preceding-group-in-config-file" class="header-anchor">#</a> mysqld: [ERROR] Found option without preceding group in config file</h2> <h2 id="mysqld-error-fatal-error-in-defaults-handling-program-aborted"><a href="#mysqld-error-fatal-error-in-defaults-handling-program-aborted" class="header-anchor">#</a> mysqld: [ERROR] Fatal error in defaults handling. Program aborted!</h2> <p>原因：</p> <p>原因是 my.ini 文件保存格式的问题：mysql里面的配置文件 my.ini 编码格式正常情况应该是 <strong>ANSI/ASCII</strong>格式的。但是，出现这种情况是 my.ini 配置文件格式竟然被默认改成了 utf-8 格式造成的。</p> <p>解决：</p> <p>步骤：用记事本打开 <strong>my.ini</strong> 文件——》点击“<strong>文件</strong>”选择“<strong>另存为</strong>”——》将编码选为 <strong>ANSI</strong>——》保存覆盖——》重启 MySQL 。</p> <h2 id="数据库-字符串类型数据-按数值排序"><a href="#数据库-字符串类型数据-按数值排序" class="header-anchor">#</a> 数据库 字符串类型数据  按数值排序</h2> <p>降序排列：
+SELECT * from nrrs.etl_job ORDER BY duration+0 desc
+升序排列：
+SELECT * from nrrs.etl_job ORDER BY duration+0 asc</p> <p>最全方案：</p> <p>https://blog.csdn.net/parade0393/article/details/79406020</p> <h2 id="sql-取-结果-第一个"><a href="#sql-取-结果-第一个" class="header-anchor">#</a> sql 取 结果 第一个</h2> <div class="language- extra-class"><pre class="language-text"><code>LIMIT 1 
+</code></pre></div><p><img src="https://gitee.com/yt46767/doc/raw/master/image-20211013153944394.png" alt="image-20211013153944394"></p> <p>https://www.cnblogs.com/feifeicui/p/10169854.html</p> <h2 id="有条件的合并第二个表"><a href="#有条件的合并第二个表" class="header-anchor">#</a> 有条件的合并第二个表</h2> <p>left join 时间 最近</p> <div class="language- extra-class"><pre class="language-text"><code>SELECT
+
+u.id,
+
+u.user_name,
+
+u.last_upd_time AS audit_time,
+
+u.state,
+
+suo.opt_user_name
+
+FROM
+
+users AS u
+
+LEFT JOIN (
+
+SELECT
+
+opt_user_name,
+
+opt_type,
+
+user_id
+
+FROM
+
+opt_user_log
+
+WHERE
+
+opt_type IN (1, 2)
+
+ORDER BY
+
+add_time DESC
+
+) AS suo ON suo.user_id = u.id
+
+WHERE
+
+(1 = 1)
+
+GROUP BY
+
+u.id
+
+ORDER BY
+
+field(u.state, 1, 2, 3),
+
+audit_time DESC;
+</code></pre></div><p>https://blog.csdn.net/weixin_32258183/article/details/113253821</p> <h2 id="查询重复"><a href="#查询重复" class="header-anchor">#</a> 查询重复</h2> <div class="language- extra-class"><pre class="language-text"><code>select*from tablenamewhere idin (
+select idfrom tablename
+group by id
+having count(id)&gt; 1
+)
+</code></pre></div><p>https://www.cnblogs.com/cl1024cl/p/6205529.html</p> <h3 id="sql-单表-多表查询去除重复记录"><a href="#sql-单表-多表查询去除重复记录" class="header-anchor">#</a> sql 单表/多表查询去除重复记录</h3> <p>单表distinct</p> <p>多表group by</p> <p>https://www.php.cn/sql/460992.html</p> <p><img src="https://gitee.com/yt46767/doc/raw/master/image-20211014140535934.png" alt="image-20211014140535934"></p> <h3 id="sql-分组取最新的一条数据"><a href="#sql-分组取最新的一条数据" class="header-anchor">#</a> SQL 分组取最新的一条数据</h3> <div class="language- extra-class"><pre class="language-text"><code>SELECT
+    obj.status, obj.mail_id, MAX(obj.update_time) latest_time, obj.*
+FROM
+    (
+        SELECT DISTINCT
+            (a.id) temp_id,
+            a.*
+        FROM
+            t_send_mail_history a
+        ORDER BY
+            a.update_time DESC
+    ) obj
+WHERE mail_id = '2109170MA0209407Y0ANZ0WSONQC4PVM'
+GROUP BY mail_id;
+</code></pre></div><p>错误写法：</p> <div class="language- extra-class"><pre class="language-text"><code>SELECT t2.id, STATUS,mail_id,MAX(t2.update_time) AS latest_time
+FROM  t_send_mail_history t2
+GROUP BY t2.mail_id;
+</code></pre></div><p>https://blog.csdn.net/persistencegoing/article/details/92764058</p> <h2 id="insert-8-5w-s-高"><a href="#insert-8-5w-s-高" class="header-anchor">#</a> insert 8.5w/s 高</h2> <p>关于线程：我的cpu只有十二个线程，所以核心线程设置的10，留两个线程打杂；</p> <p>https://blog.csdn.net/qq_33709582/article/details/121745749?utm_medium=distribute.pc_feed_v2.none-task-blog-expert_recommend-1.pc_personrecdepth_1-utm_source=distribute.pc_feed_v2.none-task-blog-expert_recommend-1.pc_personrec</p> <h2 id="数据库大表优化"><a href="#数据库大表优化" class="header-anchor">#</a> 数据库大表优化</h2> <p>https://blog.csdn.net/qq_28804275/article/details/99498553</p> <h2 id="sql-哪些情况需要创建索引"><a href="#sql-哪些情况需要创建索引" class="header-anchor">#</a> sql-哪些情况需要创建索引</h2> <p>主键自动建立唯一索引
+频繁作为查询条件的字段应该创建索引
+查询中与其它表关联的字段，外键关联建立索引
+频繁更新的字段不适合建索引（每次更新不单单是更新了记录还会更新索引）
+where条件中用不到的字段不建索引
+单键/组合索引（在高并发下建议建组合索引）
+查询中排序的字段，排序字段通过索引去访问提高排序速度
+查询中统计或分组字段
+https://blog.csdn.net/a332056918/article/details/81916255</p> <h2 id="那些情况下不创建索引"><a href="#那些情况下不创建索引" class="header-anchor">#</a> 那些情况下不创建索引</h2> <p>https://blog.csdn.net/yhw_1125/article/details/99291625</p> <h2 id="慢查询-排查"><a href="#慢查询-排查" class="header-anchor">#</a> 慢查询 排查</h2> <p>介绍两个不错的定位慢查询的工具。</p> <p><strong>mysqldumpslow</strong></p> <p>MySQL 内置了 mysqldumpslow 这个工具来帮助我们分析慢查询日志文件，Windows 环境下使用该工具需要安装 Perl 环境。比如我们可以通过<code>mysqldumpslow -s t 10 LAPTOP-8817LKVE-slow.log</code>命令得到按照查询时间排序的 10 条 SQL 。</p> <p><strong>pt-query-digest</strong></p> <p>除此之外还有 pt-query-digest，这个是 Percona Toolkit 中的工具之一，download地址：https://www.percona.com/downloads/percona-toolkit/LATEST</p> <h2 id="卸载mysql服务"><a href="#卸载mysql服务" class="header-anchor">#</a> 卸载mysql服务</h2> <p>输入命令 mysqld remove 即移除/卸载了MySQL 服务</p> <h2 id="mysql-服务无法启动。-服务没有报告任何错误"><a href="#mysql-服务无法启动。-服务没有报告任何错误" class="header-anchor">#</a> MySQL 服务无法启动。  服务没有报告任何错误</h2> <p>删除免安装mysql目录下的data文件夹</p> <ol><li>安装mysql
+mysqld --install</li> <li>启动mysql服务
+net start mysql</li> <li>初始化mysql，会产生一个随机密码，记录下这个密码，后面会用到
+mysqld --initialize --console</li> <li>连接mysql
+mysql -u root -p
+输入密码</li> <li>修改密码：
+mysql&gt; alter user root@localhost identified by '1234';
+Query OK, 0 rows affected (0.00 sec)
+https://blog.csdn.net/web13618542420/article/details/126080932</li></ol> <h2 id="忘记mysql密码"><a href="#忘记mysql密码" class="header-anchor">#</a> 忘记mysql密码</h2> <ol><li>关闭mysql
+net stop mysql</li></ol> <h2 id="mysql-修改-字段值"><a href="#mysql-修改-字段值" class="header-anchor">#</a> mysql 修改 字段值</h2> <div class="language- extra-class"><pre class="language-text"><code>UPDATE employees 
+SET 
+    email = '123@qq.com'
+WHERE
+    employeeNumber = 1056;
+</code></pre></div></div> <div class="spacer"></div> <div class="prev-next d-none d-sm-flex justify-space-between mt-9" data-v-cf01dfa6><button type="button" class="ml-n4 v-btn v-btn--plain theme--light v-size--default primary--text" data-v-cf01dfa6><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate v-icon--dense mdi mdi-arrow-left theme--light" data-v-cf01dfa6></i> <span data-v-cf01dfa6>mongoDB</span></span></button> <div class="spacer" data-v-cf01dfa6 data-v-cf01dfa6></div> <button type="button" class="mr-n4 v-btn v-btn--plain theme--light v-size--default primary--text" data-v-cf01dfa6><span class="v-btn__content"><span data-v-cf01dfa6>node</span> <i aria-hidden="true" class="v-icon notranslate v-icon--dense mdi mdi-arrow-right theme--light" data-v-cf01dfa6></i></span></button></div></div></div> <div class="v-menu" data-v-85cb3d8a><!----></div> <button type="button" class="to-top v-btn v-btn--bottom v-btn--is-elevated v-btn--fab v-btn--fixed v-btn--has-bg v-btn--right v-btn--round theme--light v-size--default" style="display:none;" data-v-85cb3d8a data-v-85cb3d8a><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate mdi mdi-arrow-expand-up theme--light primary--text" data-v-85cb3d8a></i></span></button></div></main> <!----></div></div><div class="global-ui"><div class="v-snack v-snack--bottom v-snack--has-background v-snack--right v-snack--vertical" style="padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;" data-v-fec8b358><div class="v-snack__wrapper v-sheet theme--dark" style="max-width:0px;display:none;"><div role="status" aria-live="polite" class="v-snack__content">
+    作者又有了新的笔记哟，点击刷新查看
+    </div><div class="v-snack__action "><button type="button" class="v-btn v-btn--text theme--dark v-size--default v-snack__btn"><span class="v-btn__content">
+        刷新
+      </span></button></div></div></div></div></div>
+    <script src="/andyyang-blog-vuepress/assets/js/chunk-default.21cc7129.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/369.8ae23cd4.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/1097.66850f7d.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/364.6411275a.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/vendors~app.911457c4.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/app.77efb429.js" defer></script>
+  </body>
+</html>

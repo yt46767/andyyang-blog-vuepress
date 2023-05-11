@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>接口，调用汇总入口和出口 | andy的博客</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/andyyang-blog-vuepress/favicon.ico">
+    <link rel="manifest" href="/andyyang-blog-vuepress/manifest.json">
+    <link rel="apple-touch-icon" href="/andyyang-blog-vuepress/andyyang-blog-vuepress/icons/icon-152x152.png">
+    <link rel="preconnect" href="https://ZHEDSTO6YB-dsn.algolia.net" crossorigin="true">
+    <meta name="description" content="My note space build with vuepress">
+    <meta property="article:modified_time" content="2022-09-16T13:10:52.000Z">
+    <meta property="og:site_name" content="andy的博客">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/3.%E5%B8%B8%E8%A7%81%E7%9F%A5%E8%AF%86/%E7%BC%96%E8%AF%91%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%8C%96/%E6%9E%84%E5%BB%BA%E4%BC%98%E5%8C%96.html">
+    <meta name="twitter:url" content="/3.%E5%B8%B8%E8%A7%81%E7%9F%A5%E8%AF%86/%E7%BC%96%E8%AF%91%E4%B8%8E%E5%B7%A5%E7%A8%8B%E5%8C%96/%E6%9E%84%E5%BB%BA%E4%BC%98%E5%8C%96.html">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="mulinzi">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="theme-color" content="rgba(255, 255, 255, 0.95)">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/andyyang-blog-vuepress/icons/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/andyyang-blog-vuepress/assets/css/356.styles.7f5b43fa.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/chunk-default.21cc7129.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/css/0.styles.2729282c.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/vendors~app.911457c4.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/css/styles.bdb43170.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/app.77efb429.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/css/369.styles.5ba6a8df.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/369.8ae23cd4.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/1066.75ecd658.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/css/364.styles.875f7ca2.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/364.6411275a.js" as="script">
+    <link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/356.styles.7f5b43fa.css"><link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/0.styles.2729282c.css"><link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/styles.bdb43170.css"><link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/369.styles.5ba6a8df.css"><link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/364.styles.875f7ca2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div data-app="true" id="doc" class="v-application v-application--is-ltr theme--light" data-v-85cb3d8a><div class="v-application--wrap"><!----> <header class="v-sheet theme--light elevation-0 v-toolbar v-toolbar--dense v-app-bar v-app-bar--clipped" style="height:48px;margin-top:0px;transform:translateY(0px);left:0px;right:0px;" data-v-7a69d0a6 data-v-85cb3d8a><div class="v-toolbar__content" style="height:48px;"><button type="button" class="v-app-bar__nav-icon v-btn v-btn--icon v-btn--round theme--light v-size--default" data-v-7a69d0a6><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate mdi mdi-menu theme--light" data-v-7a69d0a6></i></span></button> <div class="spacer" data-v-7a69d0a6></div> <div class="v-menu" data-v-7a69d0a6><button type="button" class="account-menu v-btn v-btn--text theme--light v-size--large" data-v-7a69d0a6><span class="v-btn__content"><div class="v-avatar mr-2" style="height:36px;min-width:36px;width:36px;" data-v-7a69d0a6><img src="/andyyang-blog-vuepress/assets/img/me.f91f18c4.png" alt="mulinzi" data-v-7a69d0a6></div> <span class="pl-1 pr-1" data-v-7a69d0a6>Andyyang</span> <i aria-hidden="true" class="v-icon notranslate mdi mdi-chevron-down theme--light" data-v-7a69d0a6></i></span></button><!----></div></div></header> <nav class="v-navigation-drawer v-navigation-drawer--clipped v-navigation-drawer--close v-navigation-drawer--fixed v-navigation-drawer--is-mobile theme--light" style="height:100vh;top:0px;transform:translateX(-100%);width:300px;" data-v-67c32539 data-v-85cb3d8a><div class="v-navigation-drawer__content"><div class="v-input mx-2 mt-3 v-input--hide-details v-input--dense theme--light v-text-field v-text-field--enclosed v-text-field--outlined" data-v-67c32539><div class="v-input__control"><div class="v-input__slot"><fieldset aria-hidden="true"><legend style="width:0px;"><span class="notranslate">&#8203;</span></legend></fieldset><div class="v-text-field__slot"><label for="input-39020" class="v-label theme--light" style="left:0px;right:auto;position:absolute;">查找笔记文件</label><input id="input-39020" type="text"></div><div class="v-input__append-inner"><div></div></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--append"><i aria-hidden="true" class="v-icon notranslate mdi mdi-magnify theme--light"></i></div></div></div></div></div> <div class="v-treeview v-treeview--hoverable theme--light" data-v-67c32539><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            1.基础知识
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            2.进阶知识
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            3.常见知识
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            4.常见问题
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            5.图书馆
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            6.资源
+          </div></span></div></div></div><!----></div></div></div><div class="v-navigation-drawer__border"></div></nav> <main class="v-main" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;" data-v-85cb3d8a><div class="v-main__wrap"><!----> <div id="scroll-body" class="theme-container py-sm-10 py-0" data-v-85cb3d8a><div class="theme-default-content d-flex flex-column pa-sm-6 pa-2" data-v-85cb3d8a><div class="content__default"><h2 id="接口-调用汇总入口和出口"><a href="#接口-调用汇总入口和出口" class="header-anchor">#</a> 接口，调用汇总入口和出口</h2> <p>接口，整个项目全局搜，汇总成一个，减少代码量。避免重复代码</p> <h2 id="代码优化发版"><a href="#代码优化发版" class="header-anchor">#</a> 代码优化发版</h2> <p>大规模优化，建议放在接入新合作行，因为联调和测试有一个月。
+小规模优化，建议放在小版本中。</p> <h2 id="日志上报-前端优化"><a href="#日志上报-前端优化" class="header-anchor">#</a> 日志上报-前端优化</h2> <ol><li>上报数据量、每天频率比较多</li> <li>日志打印上报级别规范制定</li> <li>onerror分析原因并看看是否做：接口报错、语法报错区分</li></ol> <h2 id="错误日志、埋点上报到wa"><a href="#错误日志、埋点上报到wa" class="header-anchor">#</a> 错误日志、埋点上报到wa</h2> <ul><li>wa上报，可以更方便查问题。不用去ecc查。也减少总部一些错误日志的上报，减少对部门/项目的声誉和考核的影响</li> <li>wa服务器架构是hatword(支持批量)</li></ul> <h2 id="页面接口请求收集和优化"><a href="#页面接口请求收集和优化" class="header-anchor">#</a> 页面接口请求收集和优化</h2> <ul><li>页面接口请求数</li> <li>哪些接口不用loading</li> <li>页面超过5个接口，统计出来</li> <li>哪个接口慢</li> <li>如何优化接口请求</li></ul> <h2 id="静态资源报错-前端日志没有上报"><a href="#静态资源报错-前端日志没有上报" class="header-anchor">#</a> 静态资源报错，前端日志没有上报</h2> <p>比如：图片404等</p> <h2 id="图片大小优化"><a href="#图片大小优化" class="header-anchor">#</a> 图片大小优化</h2> <ul><li>大图用webp，降级到png</li> <li>png8替代png24,png24替代png32</li></ul> <h2 id="微信小程序-路由表动态生成-方案"><a href="#微信小程序-路由表动态生成-方案" class="header-anchor">#</a> 微信小程序 路由表动态生成 方案</h2> <p>https://www.cnblogs.com/10manongit/p/12722887.html</p> <h2 id="delete-require-cache"><a href="#delete-require-cache" class="header-anchor">#</a> delete require.cache</h2> <p>使用场景的原因：
+但是当我们重新引入server.js的app = require('./server.js')的时候会发现并不是用的最新的server.js文件，原因是require的缓存机制，在第一次调用require('./server.js')的时候缓存下来了。</p> <h2 id="export-default-可以缺省-用下面写法来代替"><a href="#export-default-可以缺省-用下面写法来代替" class="header-anchor">#</a> export default {}可以缺省，用下面写法来代替：</h2> <p>import * as babelParser from '@babel/parser';
+https://blog.csdn.net/m0_37527015/article/details/114398403</p> <h2 id="less的px单位转化批量为vm"><a href="#less的px单位转化批量为vm" class="header-anchor">#</a> less的px单位转化批量为vm</h2> <p>vscode 搜索框的输入正则
+[\s]+(-?(([1-9]\d*)|0)(.\d*[1-9])?)+px
+替换内容：
+vw2($1)
+注：前面有空格</p> <p>涉及正则知识点：正则变量替换
+//下面的例子用来获取url的两个参数，并返回urlRewrite之前的真实Url
+var reg=new RegExp(&quot;(http://www.qidian.com/BookReader/)(\d+),(\d+).aspx&quot;,&quot;gmi&quot;);
+var url=&quot;http://www.qidian.com/BookReader/1017141,20361055.aspx&quot;;</p> <p>//方式一,最简单常用的方式
+var rep=url.replace(reg,&quot;$1ShowBook.aspx?bookId=$2&amp;chapterId=$3&quot;);
+alert(rep);
+https://www.jb51.net/article/84784.htm</p> <h2 id="后台日志问题排查-可以请求多带一个无用的页面路径参数-方便生产排查问题。"><a href="#后台日志问题排查-可以请求多带一个无用的页面路径参数-方便生产排查问题。" class="header-anchor">#</a> 后台日志问题排查，可以请求多带一个无用的页面路径参数，方便生产排查问题。</h2> <h2 id="各种模块化规范-html怎么引入使用"><a href="#各种模块化规范-html怎么引入使用" class="header-anchor">#</a> 各种模块化规范，html怎么引入使用</h2> <p>无模块化直接使用
+commonjs用webpack
+amd用requirejs
+cmd用seajs
+https://www.imooc.com/article/20057/</p> <p>注：
+requirejs的网站去下载js -&gt; requirejs.org</p> <h1 id="amd使用"><a href="#amd使用" class="header-anchor">#</a> amd使用</h1> <p>https://blog.csdn.net/qq_25905161/article/details/82688751</p> <h2 id="rollup打包npm包-优化代码大小"><a href="#rollup打包npm包-优化代码大小" class="header-anchor">#</a> rollup打包npm包，优化代码大小</h2> <p>使用 rollup来打包 library，rollup相较于 webpack 在打包体积上会跟小，更加适合</p> <p>rollup 的特点：</p> <p>Tree Shaking: 自动移除未使用的代码, 输出更小的文件<br>
+Scope Hoisting: 所有模块构建在一个函数内, 执行效率更高<br>
+Config 文件支持通过 ESM 模块格式书写<br>
+可以一次输出多种格式:<br>
+模块规范: IIFE, AMD, CJS, UMD, ESM<br>
+Development 与 production 版本: .js, .min.js</p> <p>https://blog.csdn.net/dibisha7239/article/details/102311042</p> <h2 id="babel-plugin-import"><a href="#babel-plugin-import" class="header-anchor">#</a> babel-plugin-import</h2> <p>插件会帮我们将import { message } from 'qw-ui'转换成 import message from 'qw-ui/lib/message' 的写法。同时自动注入组件样式。<br>
+https://blog.csdn.net/dibisha7239/article/details/102311042</p> <h2 id="无用变量构建剔除"><a href="#无用变量构建剔除" class="header-anchor">#</a> 无用变量构建剔除</h2> <p>编译使用tree-shaking</p> <h2 id="多机构代码差异-建议注释构建剔除"><a href="#多机构代码差异-建议注释构建剔除" class="header-anchor">#</a> 多机构代码差异，建议注释构建剔除</h2> <p>预编译阶段处理</p> <h2 id="wepy预编译-条件替换-保留"><a href="#wepy预编译-条件替换-保留" class="header-anchor">#</a> wepy预编译，条件替换/保留</h2> <ul><li>使用场景：多机构</li> <li>wepy解析替换插件：wepy-plugin-replace</li></ul> <div class="language- extra-class"><pre class="language-text"><code>module.exports.plugins = {
+	'replace': {
+		filter: /moment\.js$/,
+		config: {
+			find: /([\w\[\]a-d\.]+)\s*instanceof Function/g,
+			replace: function (matchs, word) {
+				return ' typeof ' + word + &amp;quot; ==='function' &amp;quot;;
+			}
+		}
+	}
+};
+</code></pre></div><h2 id="小程序拆包优化"><a href="#小程序拆包优化" class="header-anchor">#</a> 小程序拆包优化</h2> <ul><li>把公共文件进行拆包。
+&gt; 原理：
+&gt; 	依赖树收集，引用时每个节点计数+1</li></ul> <h2 id="图片替换成前置的设计方案"><a href="#图片替换成前置的设计方案" class="header-anchor">#</a> 图片替换成前置的设计方案：</h2> <ol><li>template，转成ast，读取image的src的值，取文件名_图片名存缓存，替换为</li> <li>script，判断是否有<code>import imagesConfig from '@config/imagesConfig';</code>，没有时在最前面加上
+读取class里data的文件名_图片名是否存在，没有则创建 文件名_图片名: imagesConfig.文件名_图片名,</li> <li>imagesConfig，读取imagesConfig的imagesUrl的文件名_图片名是否存在，没有则创建文件名_图片名
+附：
+httpclient检查：
+https://blog.csdn.net/weixin_30514745/article/details/95915838</li></ol> <h2 id="treeshake"><a href="#treeshake" class="header-anchor">#</a> treeshake</h2> <ul><li>宽松模式</li> <li>可以自动去掉未使用变量</li></ul> <h2 id="跨包预加载"><a href="#跨包预加载" class="header-anchor">#</a> 跨包预加载</h2> <ul><li>子包跳主包
+子包运行时，用过渡页加载主包，这样就可以子包使用主包</li></ul> <h2 id="wpy多机构、多变量、多条件预处理插件"><a href="#wpy多机构、多变量、多条件预处理插件" class="header-anchor">#</a> wpy多机构、多变量、多条件预处理插件</h2> <p>wepy-plugin-preprocess
+静态分析-预编译时，设置全局变量（设置动态机构变量/环境变量） + 判断编译（用于区分多机构/多环境）</p> <p>preprocess预编译多机构处理的项目实例
+<img src="https://gitee.com/yt46767/doc/raw/master/2021-03-24/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_16139798055415.png" alt=""> <img src="https://gitee.com/yt46767/doc/raw/master/2021-03-24/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_16139798268544.png" alt=""> <img src="https://gitee.com/yt46767/doc/raw/master/2021-03-24/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_16139798411373.png" alt=""></p> <h2 id="wepy-解析-替换-插件"><a href="#wepy-解析-替换-插件" class="header-anchor">#</a> wepy 解析 替换  插件</h2> <p>（1）wepy-plugin-replace
+module.exports.plugins = {
+'replace': {
+filter: /moment.js$/,
+config: {
+find: /([\w[]a-d.]+)\s*instanceof Function/g,
+replace: function (matchs, word) {
+return ' typeof ' + word + &quot; ==='function' &quot;;
+}
+}
+}
+};</p> <h2 id="图片服务器"><a href="#图片服务器" class="header-anchor">#</a> 图片服务器</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token string-property property">&quot;picServer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;cd miniprogramAssets &amp;&amp; http-server -p 8000 --cors&quot;</span>
+</code></pre></div><h2 id="忽略超过大于500kb-的文件的编译"><a href="#忽略超过大于500kb-的文件的编译" class="header-anchor">#</a> 忽略超过大于500kb 的文件的编译</h2> <p>npm i wepy-compiler-babel@1.5.3 --save-dev
+wepy build --no-cache</p> <h2 id="开发者工具开启-es6-es5-打开增强编译-压缩混淆-中的一个才会有sourcemap"><a href="#开发者工具开启-es6-es5-打开增强编译-压缩混淆-中的一个才会有sourcemap" class="header-anchor">#</a> 开发者工具开启 es6-&gt;es5 / 打开增强编译 / 压缩混淆 中的一个才会有sourcemap</h2> <h2 id="微信小程序-source-map-的使用及一键解析-大全"><a href="#微信小程序-source-map-的使用及一键解析-大全" class="header-anchor">#</a> 微信小程序 Source Map 的使用及一键解析（大全）</h2> <p>https://blog.windstone.cc/articles/wechat-mini-program-sourcemap/#%E8%83%8C%E6%99%AF%E4%BB%8B%E7%BB%8D</p> <p>微信小程序 source-map在线解析工具
+https://blog.windstone.cc/tools/wechat-mini-program-sourcemap</p> <p>客户经理小程序 sourcemap生成条件：
+Source Map
+微信小程序为了开发者能够根据打包后的 JS 错误位置定位到源码里的错误位置，提供了 Source Map 支持。在开发者工具里若是开启了“ES6 转 ES5”（或“代码压缩”、“增强编译”），在上传代码时会生成Source Map文件，方便定位错误位置。</p> <p>小程序后台获取的 Source Map 压缩包解压后的结构如下：</p> <p>├── <strong>APP</strong>
+│   └── app-service.map.map
+├── <strong>FULL</strong>
+│   └── app-service.map.map
+├── sub-package-A
+│   └── app-service.map.map
+├── sub-package-B
+│   └── app-service.map.map
+└── ...
+└── app-service.map.map
+https://developers.weixin.qq.com/community/develop/article/doc/00068a663482b066b08b1e1375c013</p> <h2 id="图片替换成前置的设计方案-【未实现】"><a href="#图片替换成前置的设计方案-【未实现】" class="header-anchor">#</a> 图片替换成前置的设计方案：【未实现】</h2> <p>1、template，转成ast，读取image的src的值，取文件名_图片名存缓存，替换为 
+2、script，判断是否有“import imagesConfig from '@config/imagesConfig';”，没有时在最前面加上。
+3、读取class里data的“文件名_图片名”变量是否存在，没有则创建“新变量”
+4、imagesConfig文件，读取imagesConfig里的imagesUrl里的“文件名_图片名”变量是否存在，没有则创建“新变量”</p> <h2 id="包自动拆解"><a href="#包自动拆解" class="header-anchor">#</a> 包自动拆解：</h2> <p>依赖树收集
+每个依赖加一</p> <h2 id="动态换肤"><a href="#动态换肤" class="header-anchor">#</a> 动态换肤</h2> <p>webpack-plugin 用 css变量</p> <h2 id="importdeclaration解析import"><a href="#importdeclaration解析import" class="header-anchor">#</a> importDeclaration解析import</h2> <h2 id="treeshake-宽松模式"><a href="#treeshake-宽松模式" class="header-anchor">#</a> treeshake:宽松模式</h2> <p>可以去掉未使用，用了已有变量</p> <h2 id="js解析-babel原理"><a href="#js解析-babel原理" class="header-anchor">#</a> js解析：（babel原理）</h2> <p>parse-&gt;transform-&gt;generate</p> <h2 id="解释器执行时间"><a href="#解释器执行时间" class="header-anchor">#</a> 解释器执行时间</h2> <p>执行一条语句要花费解释器一定的时间。假设解释器声明一个类要3ms，声明一个变量要1ms，声明一个函数要2ms，可以看到，我们花费了无用的时间来声明一些永远不会使用的东西，这些时间应该用来做更有价值的事。
+[关联tree-shaking]</p> <h2 id="下载时间"><a href="#下载时间" class="header-anchor">#</a> 下载时间</h2> <p>无用代码会让我们下载应用到浏览器时变大，这可不是好的用户体验，尤其是对于那些网速慢的用户。</p> <h2 id="tree-shake插件的摇树前后"><a href="#tree-shake插件的摇树前后" class="header-anchor">#</a> tree-shake插件的摇树前后</h2> <p><img src="https://gitee.com/yt46767/doc/raw/master/2021-03/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210326160140.png" alt=""> <img src="https://gitee.com/yt46767/doc/raw/master/2021-03/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210326160307.png" alt=""></p> <h2 id="代码解析出ast"><a href="#代码解析出ast" class="header-anchor">#</a> 代码解析出ast</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> ast <span class="token operator">=</span> acorn<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>code<span class="token punctuation">,</span> options<span class="token punctuation">)</span>
+</code></pre></div><h2 id="webpack-svg打包成雪碧图优化"><a href="#webpack-svg打包成雪碧图优化" class="header-anchor">#</a> webpack，svg打包成雪碧图优化</h2> <p>关键插件：svg-sprite-loader
+https://blog.csdn.net/weixin_45746826/article/details/109441185</p> <h2 id="解析器-loader"><a href="#解析器-loader" class="header-anchor">#</a> 解析器，loader</h2> <p>解析代码
+less，对应less-loader
+html，对应html-loader
+jsx，对应babel-loader
+注：</p> <ul><li>解析 less 文件的配置，loader的顺序有 严格要求。loader 的加载顺序是 倒序，也就是 webpack 会先加载 less-loader ，再加载 css-loader ，最后加载 style-loader</li> <li>less-loader、css-loader、style-loader三者的工作内容
+less-loader : 把less代码解析成css代码
+css-loader : 是解析 css 代码中的 @import 和 url()
+style-loader : 通过 style 标签将 css 文件插入到 html 文件中</li></ul> <h2 id="压缩js-压缩成min-js"><a href="#压缩js-压缩成min-js" class="header-anchor">#</a> 压缩js 压缩成min.js</h2> <p>node.js环境，请安装uglifyjs，然后使用
+npm i -g uglifyjs</p> <p>cd addons/ueditor/assets/
+uglifyjs ueditor.js &gt; ueditor.min.js</p> <h2 id="rollup打包格式"><a href="#rollup打包格式" class="header-anchor">#</a> rollup打包格式</h2> <p><img src="https://images.gitee.com/uploads/images/2021/0419/162726_906ab56e_1779874.png" alt="输入图片说明" title="屏幕截图.png">
+https://www.jianshu.com/p/6a7413481bd2</p> <h2 id="rollup-es6-转-es5-压缩代码"><a href="#rollup-es6-转-es5-压缩代码" class="header-anchor">#</a> rollup es6 转 es5 ,压缩代码</h2> <p>https://cloud.tencent.com/developer/article/1684338</p> <h2 id="无用变量构建剔除-2"><a href="#无用变量构建剔除-2" class="header-anchor">#</a> 无用变量构建剔除</h2> <p>编译使用tree-shaking</p> <h2 id="多机构代码差异-建议注释构建剔除-2"><a href="#多机构代码差异-建议注释构建剔除-2" class="header-anchor">#</a> 多机构代码差异，建议注释构建剔除</h2> <p>预编译阶段处理</p> <h2 id="wepy预编译-条件替换-保留-2"><a href="#wepy预编译-条件替换-保留-2" class="header-anchor">#</a> wepy预编译，条件替换/保留</h2> <ul><li>使用场景：多机构</li> <li>wepy解析替换插件：wepy-plugin-replace</li></ul> <div class="language- extra-class"><pre class="language-text"><code>module.exports.plugins = {
+	'replace': {
+		filter: /moment\.js$/,
+		config: {
+			find: /([\w\[\]a-d\.]+)\s*instanceof Function/g,
+			replace: function (matchs, word) {
+				return ' typeof ' + word + &amp;quot; ==='function' &amp;quot;;
+			}
+		}
+	}
+};
+</code></pre></div><h2 id="小程序拆包优化-2"><a href="#小程序拆包优化-2" class="header-anchor">#</a> 小程序拆包优化</h2> <ul><li>把公共文件进行拆包。
+&gt; 原理：
+&gt; 	依赖树收集，引用时每个节点计数+1</li></ul> <h2 id="图片替换成前置的设计方案-2"><a href="#图片替换成前置的设计方案-2" class="header-anchor">#</a> 图片替换成前置的设计方案：</h2> <ol><li>template，转成ast，读取image的src的值，取文件名_图片名存缓存，替换为</li> <li>script，判断是否有<code>import imagesConfig from '@config/imagesConfig';</code>，没有时在最前面加上
+读取class里data的文件名_图片名是否存在，没有则创建 文件名_图片名: imagesConfig.文件名_图片名,</li> <li>imagesConfig，读取imagesConfig的imagesUrl的文件名_图片名是否存在，没有则创建文件名_图片名
+附：
+httpclient检查：
+https://blog.csdn.net/weixin_30514745/article/details/95915838</li></ol> <h2 id="treeshake-2"><a href="#treeshake-2" class="header-anchor">#</a> treeshake</h2> <ul><li>宽松模式</li> <li>可以自动去掉未使用变量</li></ul> <h2 id="跨包预加载-2"><a href="#跨包预加载-2" class="header-anchor">#</a> 跨包预加载</h2> <ul><li>子包跳主包
+子包运行时，用过渡页加载主包，这样就可以子包使用主包</li></ul> <h2 id="wpy多机构、多变量、多条件预处理插件-2"><a href="#wpy多机构、多变量、多条件预处理插件-2" class="header-anchor">#</a> wpy多机构、多变量、多条件预处理插件</h2> <p>wepy-plugin-preprocess
+静态分析-预编译时，设置全局变量（设置动态机构变量/环境变量） + 判断编译（用于区分多机构/多环境）</p> <p>preprocess预编译多机构处理的项目实例
+<img src="https://gitee.com/yt46767/doc/raw/master/2021-03-24/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_16139798055415.png" alt=""> <img src="https://gitee.com/yt46767/doc/raw/master/2021-03-24/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_16139798268544.png" alt=""> <img src="https://gitee.com/yt46767/doc/raw/master/2021-03-24/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_16139798411373.png" alt=""></p> <h2 id="wepy-解析-替换-插件-2"><a href="#wepy-解析-替换-插件-2" class="header-anchor">#</a> wepy 解析 替换  插件</h2> <p>（1）wepy-plugin-replace
+module.exports.plugins = {
+'replace': {
+filter: /moment.js$/,
+config: {
+find: /([\w[]a-d.]+)\s*instanceof Function/g,
+replace: function (matchs, word) {
+return ' typeof ' + word + &quot; ==='function' &quot;;
+}
+}
+}
+};</p> <h2 id="图片服务器-2"><a href="#图片服务器-2" class="header-anchor">#</a> 图片服务器</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token string-property property">&quot;picServer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;cd miniprogramAssets &amp;&amp; http-server -p 8000 --cors&quot;</span>
+</code></pre></div><h2 id="忽略超过大于500kb-的文件的编译-2"><a href="#忽略超过大于500kb-的文件的编译-2" class="header-anchor">#</a> 忽略超过大于500kb 的文件的编译</h2> <p>npm i wepy-compiler-babel@1.5.3 --save-dev
+wepy build --no-cache</p> <h2 id="开发者工具开启-es6-es5-打开增强编译-压缩混淆-中的一个才会有sourcemap-2"><a href="#开发者工具开启-es6-es5-打开增强编译-压缩混淆-中的一个才会有sourcemap-2" class="header-anchor">#</a> 开发者工具开启 es6-&gt;es5 / 打开增强编译 / 压缩混淆 中的一个才会有sourcemap</h2> <h2 id="微信小程序-source-map-的使用及一键解析-大全-2"><a href="#微信小程序-source-map-的使用及一键解析-大全-2" class="header-anchor">#</a> 微信小程序 Source Map 的使用及一键解析（大全）</h2> <p>https://blog.windstone.cc/articles/wechat-mini-program-sourcemap/#%E8%83%8C%E6%99%AF%E4%BB%8B%E7%BB%8D</p> <p>微信小程序 source-map在线解析工具
+https://blog.windstone.cc/tools/wechat-mini-program-sourcemap</p> <p>客户经理小程序 sourcemap生成条件：
+Source Map
+微信小程序为了开发者能够根据打包后的 JS 错误位置定位到源码里的错误位置，提供了 Source Map 支持。在开发者工具里若是开启了“ES6 转 ES5”（或“代码压缩”、“增强编译”），在上传代码时会生成Source Map文件，方便定位错误位置。</p> <p>小程序后台获取的 Source Map 压缩包解压后的结构如下：</p> <p>├── <strong>APP</strong>
+│   └── app-service.map.map
+├── <strong>FULL</strong>
+│   └── app-service.map.map
+├── sub-package-A
+│   └── app-service.map.map
+├── sub-package-B
+│   └── app-service.map.map
+└── ...
+└── app-service.map.map
+https://developers.weixin.qq.com/community/develop/article/doc/00068a663482b066b08b1e1375c013</p> <h2 id="图片替换成前置的设计方案-【未实现】-2"><a href="#图片替换成前置的设计方案-【未实现】-2" class="header-anchor">#</a> 图片替换成前置的设计方案：【未实现】</h2> <p>1、template，转成ast，读取image的src的值，取文件名_图片名存缓存，替换为 
+2、script，判断是否有“import imagesConfig from '@config/imagesConfig';”，没有时在最前面加上。
+3、读取class里data的“文件名_图片名”变量是否存在，没有则创建“新变量”
+4、imagesConfig文件，读取imagesConfig里的imagesUrl里的“文件名_图片名”变量是否存在，没有则创建“新变量”</p> <h2 id="包自动拆解-2"><a href="#包自动拆解-2" class="header-anchor">#</a> 包自动拆解：</h2> <p>依赖树收集
+每个依赖加一</p> <h2 id="动态换肤-2"><a href="#动态换肤-2" class="header-anchor">#</a> 动态换肤</h2> <p>webpack-plugin 用 css变量</p> <h2 id="importdeclaration解析import-2"><a href="#importdeclaration解析import-2" class="header-anchor">#</a> importDeclaration解析import</h2> <h2 id="treeshake-宽松模式-2"><a href="#treeshake-宽松模式-2" class="header-anchor">#</a> treeshake:宽松模式</h2> <p>可以去掉未使用，用了已有变量</p> <h2 id="js解析-babel原理-2"><a href="#js解析-babel原理-2" class="header-anchor">#</a> js解析：（babel原理）</h2> <p>parse-&gt;transform-&gt;generate</p> <h2 id="解释器执行时间-2"><a href="#解释器执行时间-2" class="header-anchor">#</a> 解释器执行时间</h2> <p>执行一条语句要花费解释器一定的时间。假设解释器声明一个类要3ms，声明一个变量要1ms，声明一个函数要2ms，可以看到，我们花费了无用的时间来声明一些永远不会使用的东西，这些时间应该用来做更有价值的事。
+[关联tree-shaking]</p> <h2 id="下载时间-2"><a href="#下载时间-2" class="header-anchor">#</a> 下载时间</h2> <p>无用代码会让我们下载应用到浏览器时变大，这可不是好的用户体验，尤其是对于那些网速慢的用户。</p> <h2 id="tree-shake插件的摇树前后-2"><a href="#tree-shake插件的摇树前后-2" class="header-anchor">#</a> tree-shake插件的摇树前后</h2> <p><img src="https://gitee.com/yt46767/doc/raw/master/2021-03/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210326160140.png" alt=""> <img src="https://gitee.com/yt46767/doc/raw/master/2021-03/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20210326160307.png" alt=""></p> <h2 id="代码解析出ast-2"><a href="#代码解析出ast-2" class="header-anchor">#</a> 代码解析出ast</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> ast <span class="token operator">=</span> acorn<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>code<span class="token punctuation">,</span> options<span class="token punctuation">)</span>
+</code></pre></div><h2 id="webpack-svg打包成雪碧图优化-2"><a href="#webpack-svg打包成雪碧图优化-2" class="header-anchor">#</a> webpack，svg打包成雪碧图优化</h2> <p>关键插件：svg-sprite-loader
+https://blog.csdn.net/weixin_45746826/article/details/109441185</p> <h2 id="解析器-loader-2"><a href="#解析器-loader-2" class="header-anchor">#</a> 解析器，loader</h2> <p>解析代码
+less，对应less-loader
+html，对应html-loader
+jsx，对应babel-loader
+注：</p> <ul><li>解析 less 文件的配置，loader的顺序有 严格要求。loader 的加载顺序是 倒序，也就是 webpack 会先加载 less-loader ，再加载 css-loader ，最后加载 style-loader</li> <li>less-loader、css-loader、style-loader三者的工作内容
+less-loader : 把less代码解析成css代码
+css-loader : 是解析 css 代码中的 @import 和 url()
+style-loader : 通过 style 标签将 css 文件插入到 html 文件中</li></ul> <h2 id="压缩js-压缩成min-js-2"><a href="#压缩js-压缩成min-js-2" class="header-anchor">#</a> 压缩js 压缩成min.js</h2> <p>node.js环境，请安装uglifyjs，然后使用
+npm i -g uglifyjs</p> <p>cd addons/ueditor/assets/
+uglifyjs ueditor.js &gt; ueditor.min.js</p> <h2 id="rollup打包格式-2"><a href="#rollup打包格式-2" class="header-anchor">#</a> rollup打包格式</h2> <p><img src="https://images.gitee.com/uploads/images/2021/0419/162726_906ab56e_1779874.png" alt="输入图片说明" title="屏幕截图.png">
+https://www.jianshu.com/p/6a7413481bd2</p> <h2 id="rollup-es6-转-es5-压缩代码-2"><a href="#rollup-es6-转-es5-压缩代码-2" class="header-anchor">#</a> rollup es6 转 es5 ,压缩代码</h2> <p>https://cloud.tencent.com/developer/article/1684338</p> <h2 id="cssloader-extract"><a href="#cssloader-extract" class="header-anchor">#</a> cssloader extract</h2> <p>是否分离css文件
+<img src="https://images.gitee.com/uploads/images/2021/0610/164737_2b2a4a85_1779874.png" alt="输入图片说明" title="屏幕截图.png">
+来自https://blog.csdn.net/weixin_44869002/article/details/105831757</p> <h2 id="代码分块、分段方法-如-vendor、app"><a href="#代码分块、分段方法-如-vendor、app" class="header-anchor">#</a> 代码分块、分段方法，如：vendor、app</h2> <p>https://juejin.cn/post/6844903918862860301</p> <p>包含：</p> <ul><li>css 去除无用的样式</li></ul> <h2 id="移除html中的注释"><a href="#移除html中的注释" class="header-anchor">#</a> 移除HTML中的注释</h2> <p>removeComments: true, //移除HTML中的注释
+https://www.cnblogs.com/bbbiu/p/9593854.html</p> <h2 id="优化指标参考"><a href="#优化指标参考" class="header-anchor">#</a> 优化指标参考</h2> <p>https://blog.51cto.com/u_15098029/2614600</p> <h2 id="html根据环境、动态脚本、动态注入脚本"><a href="#html根据环境、动态脚本、动态注入脚本" class="header-anchor">#</a> html根据环境、动态脚本、动态注入脚本</h2> <p>在htmlWebpackPlugin中添加环境变量env的配置</p> <div class="language- extra-class"><pre class="language-text"><code>new HtmlWebpackPlugin({
+    template: './src/public/index.ejs',
+    inject: 'body',
+    hash: true,
+    env: process.env.NODE_ENV
+})
+</code></pre></div><p>在html页面中可以这样使用</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;% if(htmlWebpackPlugin.options.env == 'production'){ %&gt;
+&lt;script src=&quot;xxx/react.min.js&quot;&gt;&lt;/script&gt; 
+&lt;script src=&quot;xxx/react-dom.min.js&quot;&gt;&lt;/script&gt; 
+&lt;% } else { %&gt;
+&lt;script src=&quot;xxx/react.development.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;xxx/react-dom.development.js&quot;&gt;&lt;/script&gt;
+&lt;% } %&gt;
+</code></pre></div><p>https://www.cnblogs.com/mengff/p/9815333.html</p> <h2 id="moment-js按需加载"><a href="#moment-js按需加载" class="header-anchor">#</a> moment.js按需加载</h2> <p>去掉英文包，剩下中文包只有4.3kb，但也是整个中文包，没有做到按需</p> <p>https://www.jianshu.com/p/60189726237b</p> <p>更优的替代插件：day.js</p> <p>仅 2kb 大小的微型库</p> <p>https://github.com/iamkun/dayjs/blob/HEAD/docs/zh-cn/README.zh-CN.md</p> <p>day.js语言包按需引入</p> <p>https://www.codercto.com/a/66257.html</p> <h2 id="前端-缓存"><a href="#前端-缓存" class="header-anchor">#</a> 前端 缓存</h2> <p>只要图片是base64 我看都是<strong>from memroy cache</strong>。</p> <p>总结: 解析渲染图片这么费劲的事情，还是做一次然后放到内存吧。 用的时候直接拿</p> <p>304缓存</p> <p>​	js/css/jpg等文件，是不是没有配置nginx相关缓存？</p> <p><img src="https://gitee.com/yt46767/doc/raw/master/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_16396263622892.png" alt="img"></p> <p><img src="https://gitee.com/yt46767/doc/raw/master/image-20211216114429326.png" alt="image-20211216114429326"></p> <p>http://www.zuidaima.com/question/1919576544365568.htm</p> <h2 id="babel-parser-babel-traverse-babel-generator-babel-types示例"><a href="#babel-parser-babel-traverse-babel-generator-babel-types示例" class="header-anchor">#</a> @babel/parser @babel/traverse @babel/generator @babel/types示例：</h2> <p>https://blog.csdn.net/jennieji/article/details/100839305</p> <h2 id="babel"><a href="#babel" class="header-anchor">#</a> babel</h2> <p>var parser = require('@babel/parser'); // 将源代码解析成AST
+var traverse = require('@babel/traverse').default; // 对AST节点进行递归遍历
+var generator = require('@babel/generator').default; // 将AST解码回js代码
+var bableTypes = require('@babel/types'); // 对具体的AST节点进行增删改查</p> <h2 id="js模块化规范"><a href="#js模块化规范" class="header-anchor">#</a> js模块化规范</h2> <ul><li>commonjs同步模式
+适用于node环境，而浏览器不兼容CommonJs，原因是浏览器缺少module、exports、require、global四个环境变量</li> <li>amd异步模式
+引入工具require.js</li> <li>cmd异步模式（就近+按需加载）
+引入工具sea.js</li></ul> <h2 id="构建优化大全"><a href="#构建优化大全" class="header-anchor">#</a> 构建优化大全</h2> <p>https://segmentfault.com/a/1190000016816813</p> <h2 id="脚本工具-大全"><a href="#脚本工具-大全" class="header-anchor">#</a> 脚本工具（大全）</h2> <p>适用于vue/wepy/react的项目编译处理。
+https://blog.csdn.net/guang_s/article/details/84672449
+<img src="https://gitee.com/yt46767/doc/raw/master/2021-02-08/6021099a3c1bc.png" alt=""></p> <h2 id="构建脚本工具大全-对vue-wepy-react等都适用"><a href="#构建脚本工具大全-对vue-wepy-react等都适用" class="header-anchor">#</a> 构建脚本工具大全，对vue/wepy/react等都适用！</h2> <p><img src="https://gitee.com/yt46767/doc/raw/master/2021-02-03/601a06b7b7b26.png" alt=""></p> <h2 id="css-tree-shaking"><a href="#css-tree-shaking" class="header-anchor">#</a> css tree shaking</h2> <p><strong>purifycss-webpack</strong>：移除没有使用到css样式</p> <p>安装 <strong>npm install purifycss-webpack purifycss --save-dev</strong></p> <p>https://blog.csdn.net/weixin_38022998/article/details/103662130</p></div> <div class="spacer"></div> <div class="prev-next d-none d-sm-flex justify-space-between mt-9" data-v-cf01dfa6><button type="button" class="ml-n4 v-btn v-btn--plain theme--light v-size--default primary--text" data-v-cf01dfa6><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate v-icon--dense mdi mdi-arrow-left theme--light" data-v-cf01dfa6></i> <span data-v-cf01dfa6>webpack优化</span></span></button> <div class="spacer" data-v-cf01dfa6 data-v-cf01dfa6></div> <!----></div></div></div> <div class="v-menu" data-v-85cb3d8a><!----></div> <button type="button" class="to-top v-btn v-btn--bottom v-btn--is-elevated v-btn--fab v-btn--fixed v-btn--has-bg v-btn--right v-btn--round theme--light v-size--default" style="display:none;" data-v-85cb3d8a data-v-85cb3d8a><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate mdi mdi-arrow-expand-up theme--light primary--text" data-v-85cb3d8a></i></span></button></div></main> <!----></div></div><div class="global-ui"><div class="v-snack v-snack--bottom v-snack--has-background v-snack--right v-snack--vertical" style="padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;" data-v-fec8b358><div class="v-snack__wrapper v-sheet theme--dark" style="max-width:0px;display:none;"><div role="status" aria-live="polite" class="v-snack__content">
+    作者又有了新的笔记哟，点击刷新查看
+    </div><div class="v-snack__action "><button type="button" class="v-btn v-btn--text theme--dark v-size--default v-snack__btn"><span class="v-btn__content">
+        刷新
+      </span></button></div></div></div></div></div>
+    <script src="/andyyang-blog-vuepress/assets/js/chunk-default.21cc7129.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/369.8ae23cd4.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/1066.75ecd658.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/364.6411275a.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/vendors~app.911457c4.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/app.77efb429.js" defer></script>
+  </body>
+</html>

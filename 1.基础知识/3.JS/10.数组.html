@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>数组 | andy的博客</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/andyyang-blog-vuepress/favicon.ico">
+    <link rel="manifest" href="/andyyang-blog-vuepress/manifest.json">
+    <link rel="apple-touch-icon" href="/andyyang-blog-vuepress/andyyang-blog-vuepress/icons/icon-152x152.png">
+    <link rel="preconnect" href="https://ZHEDSTO6YB-dsn.algolia.net" crossorigin="true">
+    <meta name="description" content="数组">
+    <meta property="article:published_time" content="null">
+    <meta property="article:modified_time" content="2022-09-16T13:10:52.000Z">
+    <meta property="og:site_name" content="andy的博客">
+    <meta property="og:title" content="数组">
+    <meta property="og:description" content="数组">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/3.JS/10.%E6%95%B0%E7%BB%84.html">
+    <meta name="twitter:title" content="数组">
+    <meta name="twitter:description" content="数组">
+    <meta name="twitter:url" content="/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/3.JS/10.%E6%95%B0%E7%BB%84.html">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="mulinzi">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="JS">
+    <meta property="article:tag" content="JS">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="theme-color" content="rgba(255, 255, 255, 0.95)">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/andyyang-blog-vuepress/icons/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/andyyang-blog-vuepress/assets/css/356.styles.7f5b43fa.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/chunk-default.21cc7129.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/css/0.styles.2729282c.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/vendors~app.911457c4.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/css/styles.bdb43170.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/app.77efb429.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/css/369.styles.5ba6a8df.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/369.8ae23cd4.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/169.c2d6c2e0.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/css/364.styles.875f7ca2.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/364.6411275a.js" as="script">
+    <link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/356.styles.7f5b43fa.css"><link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/0.styles.2729282c.css"><link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/styles.bdb43170.css"><link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/369.styles.5ba6a8df.css"><link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/364.styles.875f7ca2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div data-app="true" id="doc" class="v-application v-application--is-ltr theme--light" data-v-85cb3d8a><div class="v-application--wrap"><!----> <header class="v-sheet theme--light elevation-0 v-toolbar v-toolbar--dense v-app-bar v-app-bar--clipped" style="height:48px;margin-top:0px;transform:translateY(0px);left:0px;right:0px;" data-v-7a69d0a6 data-v-85cb3d8a><div class="v-toolbar__content" style="height:48px;"><button type="button" class="v-app-bar__nav-icon v-btn v-btn--icon v-btn--round theme--light v-size--default" data-v-7a69d0a6><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate mdi mdi-menu theme--light" data-v-7a69d0a6></i></span></button> <div class="spacer" data-v-7a69d0a6></div> <div class="v-menu" data-v-7a69d0a6><button type="button" class="account-menu v-btn v-btn--text theme--light v-size--large" data-v-7a69d0a6><span class="v-btn__content"><div class="v-avatar mr-2" style="height:36px;min-width:36px;width:36px;" data-v-7a69d0a6><img src="/andyyang-blog-vuepress/assets/img/me.f91f18c4.png" alt="mulinzi" data-v-7a69d0a6></div> <span class="pl-1 pr-1" data-v-7a69d0a6>Andyyang</span> <i aria-hidden="true" class="v-icon notranslate mdi mdi-chevron-down theme--light" data-v-7a69d0a6></i></span></button><!----></div></div></header> <nav class="v-navigation-drawer v-navigation-drawer--clipped v-navigation-drawer--close v-navigation-drawer--fixed v-navigation-drawer--is-mobile theme--light" style="height:100vh;top:0px;transform:translateX(-100%);width:300px;" data-v-67c32539 data-v-85cb3d8a><div class="v-navigation-drawer__content"><div class="v-input mx-2 mt-3 v-input--hide-details v-input--dense theme--light v-text-field v-text-field--enclosed v-text-field--outlined" data-v-67c32539><div class="v-input__control"><div class="v-input__slot"><fieldset aria-hidden="true"><legend style="width:0px;"><span class="notranslate">&#8203;</span></legend></fieldset><div class="v-text-field__slot"><label for="input-4351" class="v-label theme--light" style="left:0px;right:auto;position:absolute;">查找笔记文件</label><input id="input-4351" type="text"></div><div class="v-input__append-inner"><div></div></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--append"><i aria-hidden="true" class="v-icon notranslate mdi mdi-magnify theme--light"></i></div></div></div></div></div> <div class="v-treeview v-treeview--hoverable theme--light" data-v-67c32539><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            1.基础知识
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            2.进阶知识
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            3.常见知识
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            4.常见问题
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            5.图书馆
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            6.资源
+          </div></span></div></div></div><!----></div></div></div><div class="v-navigation-drawer__border"></div></nav> <main class="v-main" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;" data-v-85cb3d8a><div class="v-main__wrap"><!----> <div id="scroll-body" class="theme-container py-sm-10 py-0" data-v-85cb3d8a><div class="theme-default-content d-flex flex-column pa-sm-6 pa-2" data-v-85cb3d8a><div class="content__default"><h2 id="方法"><a href="#方法" class="header-anchor">#</a> 方法</h2> <ul><li><p><strong>slice（截取）</strong></p> <p>截取一部分，并<strong>返回</strong>截取这部分数组，<strong>原</strong>数组<strong>不变</strong></p> <div class="language- extra-class"><pre class="language-text"><code>slice(start, end)
+</code></pre></div><p>入参：</p> <ul><li><strong>不包含第end个数</strong></li> <li>若start,end为<strong>负数</strong>，则从数组<strong>最后一个向前</strong>截取</li></ul> <p>例子：</p> <div class="language- extra-class"><pre class="language-text"><code>[1,2,3,4,5].slice(1,2,3,4,5)
+//结果为：[2]
+</code></pre></div></li> <li><p><strong>splice（删除，插入）</strong></p> <p>删除或插入一部分元素，并<strong>返回</strong>删除这部分数组，<strong>原</strong>数组会<strong>变</strong></p> <div class="language- extra-class"><pre class="language-text"><code>splice(start, number, item1, ...itemx )
+</code></pre></div><p>入参：</p> <p>​	从start索引开始删除</p> <p>​	number，代表<strong>删除元素的个数</strong></p> <p>​	items 要<strong>插入</strong>到索引的<strong>新元素</strong></p> <p>例子：</p> <div class="language- extra-class"><pre class="language-text"><code>[1,2,3,4,5].splice(1,2,3,4,5)
+
+//输出结果为：[2,3]
+//原数组会变成：[1,2,3,4,5,4,5]，即删除和插入数据
+
+var  a = [1,2,3]
+a.splice(0,1) // 返回：[1]
+
+console.log(a)
+//输出结果为： [2, 3]
+</code></pre></div></li> <li><p><strong>copyWithin（复制替换）</strong></p> <p>复制数组的指定元素 替换掉 数组指定位置</p> <div class="language- extra-class"><pre class="language-text"><code>array.copyWithin(target, start, end)
+</code></pre></div><p>入参：</p> <table><thead><tr><th style="text-align:left;">参数</th> <th style="text-align:left;">描述</th></tr></thead> <tbody><tr><td style="text-align:left;"><em>target</em></td> <td style="text-align:left;">必需，<strong>复制到指定目标索引</strong>位置。即：目标索引。</td></tr> <tr><td style="text-align:left;"><em>start</em></td> <td style="text-align:left;">可选。元素<strong>复制的起始位置</strong>。</td></tr> <tr><td style="text-align:left;"><em>end</em></td> <td style="text-align:left;">可选。<strong>停止复制的索引位置</strong> (默认为 <em>array</em>.length)。如果为负值，表示倒数。即：复制，<strong>不包括第end个数</strong></td></tr></tbody></table> <p>例子：</p> <div class="language- extra-class"><pre class="language-text"><code>var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;, &quot;Kiwi&quot;, &quot;Papaya&quot;]; 
+fruits.copyWithin(2, 0, 2); 
+// 从第一个至第二个(&quot;Banana&quot;, &quot;Orange&quot;)复制后，粘贴到第3个位置(apple)，顺延把第4个位置（Mango）也粘贴掉。
+// 输出结果：
+// Banana,Orange,Banana,Orange,Kiwi,Papaya
+</code></pre></div><p>fruits.copyWithin(2, 0, 2);
+// 从第一个至第二个(&quot;Banana&quot;, &quot;Orange&quot;)复制后，粘贴到第3个位置(apple)，<strong>顺延把第4个位置（Mango）替换掉</strong>。</p> <div class="language- extra-class"><pre class="language-text"><code>var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;, &quot;Kiwi&quot;, &quot;Papaya&quot;]; 
+fruits.copyWithin(2, 0, 3); 
+// 输出结果：
+// Banana,Orange,Banana,Orange,Apple,Papaya
+</code></pre></div><p>说明：</p> <p>fruits.copyWithin(2, 0, 3);
+// 从第一个至第三个(&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;)复制后，粘贴到第3个位置(apple)，<strong>顺延把第4、5个位置（&quot;Mango&quot;, &quot;Kiwi&quot;）替换掉</strong>。</p></li> <li><p><strong>reverse（颠倒位置）</strong></p> <p>数组颠倒位置</p> <div class="language- extra-class"><pre class="language-text"><code>array.reverse()
+</code></pre></div><p>例子：</p> <div class="language- extra-class"><pre class="language-text"><code>var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
+fruits.reverse();
+
+// 结果输出：Mango,Apple,Orange,Banana
+</code></pre></div></li> <li><p><strong>toString（转字符串）</strong></p> <p>将 数组转换为字符串</p> <p>array.toString()</p> <div class="language- extra-class"><pre class="language-text"><code>var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
+var x = fruits.toString();
+// 结果输出：Banana,Orange,Apple,Mango
+</code></pre></div></li> <li><p><strong>unshift（头插入），shift（头删除），push（尾插入），pop（尾删除）</strong></p> <p><img src="https://s2.loli.net/2022/04/13/Z6ygzUk1OVTetx2.png" alt="image-20220413151143099">注意：</p> <p>shift，中文指：转移/去除</p> <p>unshift，中文指：头部插入</p> <p>后部操作：push、pop ，类似栈的后入先出</p> <p>头部操作：unshift、shift，类似队列的先入先出</p></li> <li><p><strong>concat</strong></p> <p><strong>连接两个或多个数组</strong>。该方法<strong>不会改变现有的数组</strong>，而仅仅会返回被连接数组的一个副本</p> <p>例子：</p> <div class="language- extra-class"><pre class="language-text"><code>var a = [1,2,3];
+console.log(a.concat(4,5));
+// 输出结果为：1,2,3,4,5
+console.log(a)
+// 输出结果为：1,2,3
+</code></pre></div></li></ul> <p>​		http://caibaojian.com/w3c/js/jsref_concat_array.html</p> <ul><li><p>reduce</p> <p>对 <strong>函数数组</strong> 进行 <strong>函数嵌套</strong></p> <div class="language- extra-class"><pre class="language-text"><code>funcs.reduce((a, b) =&gt; (...args) =&gt; a(b(...args)))
+</code></pre></div><p>注：</p> <p>funcs：函数数组</p> <p>入参：函数</p></li></ul> <h2 id="属性"><a href="#属性" class="header-anchor">#</a> 属性</h2> <ul><li><p><strong>length</strong></p> <p>长度</p></li></ul></div> <div class="spacer"></div> <div class="prev-next d-none d-sm-flex justify-space-between mt-9" data-v-cf01dfa6><button type="button" class="ml-n4 v-btn v-btn--plain theme--light v-size--default primary--text" data-v-cf01dfa6><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate v-icon--dense mdi mdi-arrow-left theme--light" data-v-cf01dfa6></i> <span data-v-cf01dfa6>1.枚举</span></span></button> <div class="spacer" data-v-cf01dfa6 data-v-cf01dfa6></div> <button type="button" class="mr-n4 v-btn v-btn--plain theme--light v-size--default primary--text" data-v-cf01dfa6><span class="v-btn__content"><span data-v-cf01dfa6>11.空数据</span> <i aria-hidden="true" class="v-icon notranslate v-icon--dense mdi mdi-arrow-right theme--light" data-v-cf01dfa6></i></span></button></div></div></div> <div class="v-menu" data-v-85cb3d8a><!----></div> <button type="button" class="to-top v-btn v-btn--bottom v-btn--is-elevated v-btn--fab v-btn--fixed v-btn--has-bg v-btn--right v-btn--round theme--light v-size--default" style="display:none;" data-v-85cb3d8a data-v-85cb3d8a><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate mdi mdi-arrow-expand-up theme--light primary--text" data-v-85cb3d8a></i></span></button></div></main> <!----></div></div><div class="global-ui"><div class="v-snack v-snack--bottom v-snack--has-background v-snack--right v-snack--vertical" style="padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;" data-v-fec8b358><div class="v-snack__wrapper v-sheet theme--dark" style="max-width:0px;display:none;"><div role="status" aria-live="polite" class="v-snack__content">
+    作者又有了新的笔记哟，点击刷新查看
+    </div><div class="v-snack__action "><button type="button" class="v-btn v-btn--text theme--dark v-size--default v-snack__btn"><span class="v-btn__content">
+        刷新
+      </span></button></div></div></div></div></div>
+    <script src="/andyyang-blog-vuepress/assets/js/chunk-default.21cc7129.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/369.8ae23cd4.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/169.c2d6c2e0.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/364.6411275a.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/vendors~app.911457c4.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/app.77efb429.js" defer></script>
+  </body>
+</html>

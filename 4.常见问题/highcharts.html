@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>定义画图类型 | andy的博客</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/andyyang-blog-vuepress/favicon.ico">
+    <link rel="manifest" href="/andyyang-blog-vuepress/manifest.json">
+    <link rel="apple-touch-icon" href="/andyyang-blog-vuepress/andyyang-blog-vuepress/icons/icon-152x152.png">
+    <link rel="preconnect" href="https://ZHEDSTO6YB-dsn.algolia.net" crossorigin="true">
+    <meta name="description" content="My note space build with vuepress">
+    <meta property="article:modified_time" content="2022-09-16T13:10:52.000Z">
+    <meta property="og:site_name" content="andy的博客">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/4.%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/highcharts.html">
+    <meta name="twitter:url" content="/4.%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/highcharts.html">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="mulinzi">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="theme-color" content="rgba(255, 255, 255, 0.95)">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/andyyang-blog-vuepress/icons/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/andyyang-blog-vuepress/assets/css/356.styles.7f5b43fa.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/chunk-default.21cc7129.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/css/0.styles.2729282c.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/vendors~app.911457c4.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/css/styles.bdb43170.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/app.77efb429.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/css/369.styles.5ba6a8df.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/369.8ae23cd4.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/1090.2534230e.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/css/364.styles.875f7ca2.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/364.6411275a.js" as="script">
+    <link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/356.styles.7f5b43fa.css"><link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/0.styles.2729282c.css"><link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/styles.bdb43170.css"><link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/369.styles.5ba6a8df.css"><link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/364.styles.875f7ca2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div data-app="true" id="doc" class="v-application v-application--is-ltr theme--light" data-v-85cb3d8a><div class="v-application--wrap"><!----> <header class="v-sheet theme--light elevation-0 v-toolbar v-toolbar--dense v-app-bar v-app-bar--clipped" style="height:48px;margin-top:0px;transform:translateY(0px);left:0px;right:0px;" data-v-7a69d0a6 data-v-85cb3d8a><div class="v-toolbar__content" style="height:48px;"><button type="button" class="v-app-bar__nav-icon v-btn v-btn--icon v-btn--round theme--light v-size--default" data-v-7a69d0a6><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate mdi mdi-menu theme--light" data-v-7a69d0a6></i></span></button> <div class="spacer" data-v-7a69d0a6></div> <div class="v-menu" data-v-7a69d0a6><button type="button" class="account-menu v-btn v-btn--text theme--light v-size--large" data-v-7a69d0a6><span class="v-btn__content"><div class="v-avatar mr-2" style="height:36px;min-width:36px;width:36px;" data-v-7a69d0a6><img src="/andyyang-blog-vuepress/assets/img/me.f91f18c4.png" alt="mulinzi" data-v-7a69d0a6></div> <span class="pl-1 pr-1" data-v-7a69d0a6>Andyyang</span> <i aria-hidden="true" class="v-icon notranslate mdi mdi-chevron-down theme--light" data-v-7a69d0a6></i></span></button><!----></div></div></header> <nav class="v-navigation-drawer v-navigation-drawer--clipped v-navigation-drawer--close v-navigation-drawer--fixed v-navigation-drawer--is-mobile theme--light" style="height:100vh;top:0px;transform:translateX(-100%);width:300px;" data-v-67c32539 data-v-85cb3d8a><div class="v-navigation-drawer__content"><div class="v-input mx-2 mt-3 v-input--hide-details v-input--dense theme--light v-text-field v-text-field--enclosed v-text-field--outlined" data-v-67c32539><div class="v-input__control"><div class="v-input__slot"><fieldset aria-hidden="true"><legend style="width:0px;"><span class="notranslate">&#8203;</span></legend></fieldset><div class="v-text-field__slot"><label for="input-40492" class="v-label theme--light" style="left:0px;right:auto;position:absolute;">查找笔记文件</label><input id="input-40492" type="text"></div><div class="v-input__append-inner"><div></div></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--append"><i aria-hidden="true" class="v-icon notranslate mdi mdi-magnify theme--light"></i></div></div></div></div></div> <div class="v-treeview v-treeview--hoverable theme--light" data-v-67c32539><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            1.基础知识
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            2.进阶知识
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            3.常见知识
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            4.常见问题
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            5.图书馆
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            6.资源
+          </div></span></div></div></div><!----></div></div></div><div class="v-navigation-drawer__border"></div></nav> <main class="v-main" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;" data-v-85cb3d8a><div class="v-main__wrap"><!----> <div id="scroll-body" class="theme-container py-sm-10 py-0" data-v-85cb3d8a><div class="theme-default-content d-flex flex-column pa-sm-6 pa-2" data-v-85cb3d8a><div class="content__default"><h2 id="定义画图类型"><a href="#定义画图类型" class="header-anchor">#</a> 定义画图类型</h2> <p>https://www.highcharts.com.cn/docs/chart-types</p> <h2 id="x轴坐标刻度值设置"><a href="#x轴坐标刻度值设置" class="header-anchor">#</a> x轴坐标刻度值设置</h2> <p>方法：</p> <p><code>categories: ['12:00:00', '13:10:00', '14:20:00', '15:30:00', '16:40:00', '17:50:00', '18:60:00', '19:70:00']</code></p> <p>示例：</p> <div class="language- extra-class"><pre class="language-text"><code> // X轴
+    xAxis: {
+        title: {
+            text: ''
+        },
+        // 数据项
+        categories: ['12:00:00', '13:10:00', '14:20:00', '15:30:00', '16:40:00', '17:50:00', '18:60:00', '19:70:00']
+        // time = Date.UTC(2013,11,14,0,0,0,0);  // UTC格式时间戳
+    },
+</code></pre></div><h2 id="改变图的线柱颜色"><a href="#改变图的线柱颜色" class="header-anchor">#</a> 改变图的线柱颜色</h2> <p>方法：</p> <p><code>color: &quot;#b0b0b0&quot;,</code></p> <p>示例：</p> <div class="language- extra-class"><pre class="language-text"><code>series: [{ 
+   name: 'A', 
+   color: &quot;#b0b0b0&quot;, 
+   data: [[38,42],[39,39],[35,45],[35,54],{x:36,y:35,marker:{radius:8,symbol:'circle'}} 
+   ] 
+   }, { 
+   name: 'B', 
+   color: &quot;#b0b0b0&quot;, 
+   data: [[46,56],[47,67],[48,69],[50,55],{x:52,y:57,marker:{radius:8,symbol:'circle'}} 
+   ] 
+   }] 
+  }); 
+</code></pre></div><h2 id="多线图-30个标签-legend"><a href="#多线图-30个标签-legend" class="header-anchor">#</a> 多线图-30个标签 legend</h2> <p><img src="https://gitee.com/yt46767/doc/raw/master/image-20210831173503538.png" alt="image-20210831173503538"></p> <p>var chart = Highcharts.chart('container', {
+title: {
+text: ''
+},
+// subtitle: {
+//     text: '数据来源：thesolarfoundation.com'
+// },
+yAxis: {
+title: {
+text: '就业人数'
+}
+},
+// legend: {
+//     layout: 'horizontal',
+//     align: 'top',
+//     verticalAlign: 'top'
+// },
+plotOptions: {
+series: {
+label: {
+connectorAllowed: false
+},
+pointStart: 2010
+}
+},
+series: [{
+name: '黑龙江1',
+data: [1, 2, 3, 4, 5, 6, 7, 8]
+}, {
+name: '黑龙江2',
+data: [22, 5, 33, 12, 32, 11, 12, 3]
+}, {
+name: '黑龙江3',
+data: [2, 7, 8, 97, 6, 45, 56, 7]
+}, {
+name: '黑龙江4',
+data: [23, 45, 5, 44, 34, 25, 42, 4]
+}, {
+name: '黑龙江5',
+data: [4, 6, 6, 3, 2, 12, 33, 3]
+},{
+name: '黑龙江6',
+data: [13, 22, 34, 24, 55, 86, 7, 28]
+}, {
+name: '黑龙江7',
+data: [1, 13, 3, 4, 2, 11, 9, 31]
+}, {
+name: '黑龙江8',
+data: [21, 7, 38, 7, 6, 5, 6, 7]
+}, {
+name: '黑龙江9',
+data: [2, 4, 5, 44, 4, 2, 42, 4]
+}, {
+name: '黑龙江10',
+data: [14, 6, 36, 3, 2, 2, 33, 13]
+},{
+name: '黑龙江11',
+data: [1, 12, 3, 4, 15, 6, 7, 18]
+}, {
+name: '黑龙江12',
+data: [22, 1, 33, 12, 32, 11, 12, 3]
+}, {
+name: '黑龙江13',
+data: [2, 7, 8, 97, 6, 45, 56, 7]
+}, {
+name: '黑龙江14',
+data: [23, 45, 5, 44, 34, 25, 42, 4]
+}, {
+name: '黑龙江15',
+data: [4, 6, 6, 3, 2, 12, 33, 3]
+},{
+name: '黑龙江16',
+data: [13, 22, 34, 24, 55, 86, 7, 28]
+}, {
+name: '黑龙江17',
+data: [1, 13, 3, 14, 2, 11, 9, 31]
+}, {
+name: '黑龙江18',
+data: [21, 7, 38, 7, 6, 15, 6, 17]
+}, {
+name: '黑龙江19',
+data: [12, 4, 15, 44, 4, 12, 42, 4]
+}, {
+name: '黑龙江20',
+data: [14, 6, 36, 3, 2, 2, 33, 13]
+},{
+name: '黑龙江21',
+data: [4, 25, 8, 6, 13, 6, 01, 14]
+}, {
+name: '黑龙江22',
+data: [22, 11, 33, 44, 32, 66, 12, 33]
+}, {
+name: '黑龙江23',
+data: [21, 7, 81, 97, 46, 45, 55, 7]
+}, {
+name: '黑龙江24',
+data: [1, 1, 5, 44, 34, 25, 42, 4]
+}, {
+name: '黑龙江25',
+data: [4, 44, 44, 3, 2, 66, 33, 3]
+},{
+name: '黑龙江26',
+data: [3, 22, 44, 24, 55, 11, 7, 28]
+}, {
+name: '黑龙江27',
+data: [9, 13, 55, 4, 33, 11, 77, 31]
+}, {
+name: '黑龙江28',
+data: [77, 7, 11, 7, 61, 5, 16, 7]
+}, {
+name: '黑龙江29',
+data: [21, 14, 5, 23, 54, 12, 42, 44]
+}, {
+name: '黑龙江30',
+data: [14, 64, 36, 23, 2, 42, 1, 13]
+}],
+responsive: {
+rules: [{
+condition: {
+maxWidth: 500
+},
+// chartOptions: {
+//     legend: {
+//         layout: 'horizontal',
+//         align: 'top',
+//         verticalAlign: 'top'
+//     }
+// }
+}]
+}
+});</p> <h2 id="标签旋转"><a href="#标签旋转" class="header-anchor">#</a> 标签旋转</h2> <div class="language- extra-class"><pre><code>xAxis: {
+	type: 'category',
+	labels: {
+		rotation: 45  // 设置轴标签旋转角度
+	}
+},
+</code></pre></div><p><img src="https://gitee.com/yt46767/doc/raw/master/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_16304027797572.png" alt="img"></p> <p><img src="https://gitee.com/yt46767/doc/raw/master/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_16304027958761.png" alt="img"></p> <h2 id="highchart右倾斜45度"><a href="#highchart右倾斜45度" class="header-anchor">#</a> highchart右倾斜45度</h2> <div class="language- extra-class"><pre class="language-text"><code>xAxis: {
+    labels: {
+    	rotation: -45  // 设置轴标签旋转角度
+    }
+},
+</code></pre></div><h2 id="highchart增加legend"><a href="#highchart增加legend" class="header-anchor">#</a> highchart增加legend</h2> <div class="language- extra-class"><pre class="language-text"><code>legend: {
+    enabled: true,
+    verticalAlign: 'bottom'
+},
+</code></pre></div><h2 id="动态创建多个图表"><a href="#动态创建多个图表" class="header-anchor">#</a> 动态创建多个图表</h2> <p>数据：</p> <div class="language- extra-class"><pre class="language-text"><code>bht: [{
+        'type_tr': 'A',
+        'datax': [
+          1000, 100, 1200
+        ],
+        'datay': ['零件01', '零件03', '零件05']
+      }, {
+        'type_tr': 'B',
+        'datax': [2000],
+        'datay': ['零件02']
+      }, {
+        'type_tr': 'C',
+        'datax': [1100, 3200],
+        'datay': [
+          '零件04', '零件06'
+        ]
+      }, {
+        'type_tr': 'C',
+        'datax': [1100, 3200],
+        'datay': [
+          '零件04', '零件06'
+        ]
+      }, {
+        'type_tr': 'C',
+        'datax': [1100, 3200],
+        'datay': [
+          '零件04', '零件06'
+        ]
+      }]
+</code></pre></div><p>HTML:</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;div id=&quot;test&quot; style=&quot;border:1px dashed #000;text-align:center;&quot;&gt;&lt;/div&gt;
+</code></pre></div><p>js:</p> <div class="language- extra-class"><pre class="language-text"><code>	get_div () {
+      var divTest = document.getElementById('test')
+      console.log(divTest)
+      for (let i = 0; i &lt; this.bht.length; i++) {
+        var oDiv = document.createElement('div')
+        oDiv.id = 'bht' + i
+        oDiv.style = 'width:19%;height:200px;text-align:center;display: inline-block;margin-right:1%'
+        divTest.appendChild(oDiv)
+        this.empStatices('bht' + i, this.bht[i]) //每次遍历时执行empStatices方法
+      }
+    },
+    //每次遍历时生成highcharts图
+	empStatices (id, data) {
+      Highcharts.chart(id, {
+        title: {
+          text: data.type_tr
+        },
+        xAxis: {
+          categories: data.datay,
+          tickInterval: 0,
+          crosshair: true,
+          title: {
+            text: '日期'
+          }
+        },
+        yAxis: {
+          min: 0,
+          title: {
+            text: data.type_tr
+          }
+        },
+        plotOptions: {
+          areaspline: {
+            fillOpacity: 0.5
+          }
+        },
+        series: [{
+          name: data.type_tr,
+          data: data.datax
+        }]
+      })
+    }
+</code></pre></div><p>效果图：</p> <p><img src="https://img-blog.csdnimg.cn/20210617145025278.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1ODQ1NTIz,size_16,color_FFFFFF,t_70#pic_center" alt="img"></p> <p>https://blog.csdn.net/qq_45845523/article/details/117993540</p> <h2 id="词云-横向-不竖立"><a href="#词云-横向-不竖立" class="header-anchor">#</a> 词云 横向 不竖立</h2> <p>https://blog.csdn.net/gyysmile/article/details/103628927</p> <h2 id="highcharts-词云配置"><a href="#highcharts-词云配置" class="header-anchor">#</a> highcharts-词云配置：</h2> <p>https://blog.csdn.net/gyysmile/article/details/103628927</p> <h2 id="去掉图标"><a href="#去掉图标" class="header-anchor">#</a> 去掉图标</h2> <p>去除右下角highchart.com
+credits: {
+enabled:false
+}
+去除右上角图标
+exporting: {
+enabled:false
+}
+来自 <a href="https://www.likecs.com/show-305695044.html#sc=300" target="_blank" rel="noopener noreferrer">https://www.likecs.com/show-305695044.html#sc=300<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div> <div class="spacer"></div> <div class="prev-next d-none d-sm-flex justify-space-between mt-9" data-v-cf01dfa6><button type="button" class="ml-n4 v-btn v-btn--plain theme--light v-size--default primary--text" data-v-cf01dfa6><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate v-icon--dense mdi mdi-arrow-left theme--light" data-v-cf01dfa6></i> <span data-v-cf01dfa6>gulp</span></span></button> <div class="spacer" data-v-cf01dfa6 data-v-cf01dfa6></div> <button type="button" class="mr-n4 v-btn v-btn--plain theme--light v-size--default primary--text" data-v-cf01dfa6><span class="v-btn__content"><span data-v-cf01dfa6>html</span> <i aria-hidden="true" class="v-icon notranslate v-icon--dense mdi mdi-arrow-right theme--light" data-v-cf01dfa6></i></span></button></div></div></div> <div class="v-menu" data-v-85cb3d8a><!----></div> <button type="button" class="to-top v-btn v-btn--bottom v-btn--is-elevated v-btn--fab v-btn--fixed v-btn--has-bg v-btn--right v-btn--round theme--light v-size--default" style="display:none;" data-v-85cb3d8a data-v-85cb3d8a><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate mdi mdi-arrow-expand-up theme--light primary--text" data-v-85cb3d8a></i></span></button></div></main> <!----></div></div><div class="global-ui"><div class="v-snack v-snack--bottom v-snack--has-background v-snack--right v-snack--vertical" style="padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;" data-v-fec8b358><div class="v-snack__wrapper v-sheet theme--dark" style="max-width:0px;display:none;"><div role="status" aria-live="polite" class="v-snack__content">
+    作者又有了新的笔记哟，点击刷新查看
+    </div><div class="v-snack__action "><button type="button" class="v-btn v-btn--text theme--dark v-size--default v-snack__btn"><span class="v-btn__content">
+        刷新
+      </span></button></div></div></div></div></div>
+    <script src="/andyyang-blog-vuepress/assets/js/chunk-default.21cc7129.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/369.8ae23cd4.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/1090.2534230e.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/364.6411275a.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/vendors~app.911457c4.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/app.77efb429.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>reject(false)警告提示：Expected the Promise rejection reason to be an Error. | andy的博客</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/andyyang-blog-vuepress/favicon.ico">
+    <link rel="manifest" href="/andyyang-blog-vuepress/manifest.json">
+    <link rel="apple-touch-icon" href="/andyyang-blog-vuepress/andyyang-blog-vuepress/icons/icon-152x152.png">
+    <link rel="preconnect" href="https://ZHEDSTO6YB-dsn.algolia.net" crossorigin="true">
+    <meta name="description" content="My note space build with vuepress">
+    <meta property="article:modified_time" content="2022-09-16T13:10:52.000Z">
+    <meta property="og:site_name" content="andy的博客">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/4.%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/js.html">
+    <meta name="twitter:url" content="/4.%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/js.html">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="mulinzi">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="theme-color" content="rgba(255, 255, 255, 0.95)">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/andyyang-blog-vuepress/icons/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/andyyang-blog-vuepress/assets/css/356.styles.7f5b43fa.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/chunk-default.21cc7129.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/css/0.styles.2729282c.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/vendors~app.911457c4.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/css/styles.bdb43170.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/app.77efb429.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/css/369.styles.5ba6a8df.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/369.8ae23cd4.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/1094.175f12e0.js" as="script"><link rel="preload" href="/andyyang-blog-vuepress/assets/css/364.styles.875f7ca2.css" as="style"><link rel="preload" href="/andyyang-blog-vuepress/assets/js/364.6411275a.js" as="script">
+    <link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/356.styles.7f5b43fa.css"><link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/0.styles.2729282c.css"><link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/styles.bdb43170.css"><link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/369.styles.5ba6a8df.css"><link rel="stylesheet" href="/andyyang-blog-vuepress/assets/css/364.styles.875f7ca2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div data-app="true" id="doc" class="v-application v-application--is-ltr theme--light" data-v-85cb3d8a><div class="v-application--wrap"><!----> <header class="v-sheet theme--light elevation-0 v-toolbar v-toolbar--dense v-app-bar v-app-bar--clipped" style="height:48px;margin-top:0px;transform:translateY(0px);left:0px;right:0px;" data-v-7a69d0a6 data-v-85cb3d8a><div class="v-toolbar__content" style="height:48px;"><button type="button" class="v-app-bar__nav-icon v-btn v-btn--icon v-btn--round theme--light v-size--default" data-v-7a69d0a6><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate mdi mdi-menu theme--light" data-v-7a69d0a6></i></span></button> <div class="spacer" data-v-7a69d0a6></div> <div class="v-menu" data-v-7a69d0a6><button type="button" class="account-menu v-btn v-btn--text theme--light v-size--large" data-v-7a69d0a6><span class="v-btn__content"><div class="v-avatar mr-2" style="height:36px;min-width:36px;width:36px;" data-v-7a69d0a6><img src="/andyyang-blog-vuepress/assets/img/me.f91f18c4.png" alt="mulinzi" data-v-7a69d0a6></div> <span class="pl-1 pr-1" data-v-7a69d0a6>Andyyang</span> <i aria-hidden="true" class="v-icon notranslate mdi mdi-chevron-down theme--light" data-v-7a69d0a6></i></span></button><!----></div></div></header> <nav class="v-navigation-drawer v-navigation-drawer--clipped v-navigation-drawer--close v-navigation-drawer--fixed v-navigation-drawer--is-mobile theme--light" style="height:100vh;top:0px;transform:translateX(-100%);width:300px;" data-v-67c32539 data-v-85cb3d8a><div class="v-navigation-drawer__content"><div class="v-input mx-2 mt-3 v-input--hide-details v-input--dense theme--light v-text-field v-text-field--enclosed v-text-field--outlined" data-v-67c32539><div class="v-input__control"><div class="v-input__slot"><fieldset aria-hidden="true"><legend style="width:0px;"><span class="notranslate">&#8203;</span></legend></fieldset><div class="v-text-field__slot"><label for="input-40686" class="v-label theme--light" style="left:0px;right:auto;position:absolute;">查找笔记文件</label><input id="input-40686" type="text"></div><div class="v-input__append-inner"><div></div></div><div class="v-input__append-inner"><div class="v-input__icon v-input__icon--append"><i aria-hidden="true" class="v-icon notranslate mdi mdi-magnify theme--light"></i></div></div></div></div></div> <div class="v-treeview v-treeview--hoverable theme--light" data-v-67c32539><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            1.基础知识
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            2.进阶知识
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            3.常见知识
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            4.常见问题
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            5.图书馆
+          </div></span></div></div></div><!----></div><div aria-expanded="false" class="v-treeview-node v-treeview-node--click"><div class="v-treeview-node__root"><button type="button" class="v-icon notranslate v-treeview-node__toggle v-icon--link mdi mdi-menu-down theme--light"></button><div class="v-treeview-node__content"><div class="v-treeview-node__prepend"><i aria-hidden="true" class="v-icon notranslate mdi mdi-folder theme--light" data-v-67c32539></i></div><div class="v-treeview-node__label"><span class="v-tooltip v-tooltip--right" data-v-67c32539><!----><div aria-haspopup="true" aria-expanded="false" class="leaf-label" data-v-67c32539>
+            6.资源
+          </div></span></div></div></div><!----></div></div></div><div class="v-navigation-drawer__border"></div></nav> <main class="v-main" style="padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;" data-v-85cb3d8a><div class="v-main__wrap"><!----> <div id="scroll-body" class="theme-container py-sm-10 py-0" data-v-85cb3d8a><div class="theme-default-content d-flex flex-column pa-sm-6 pa-2" data-v-85cb3d8a><div class="content__default"><h2 id="reject-false-警告提示-expected-the-promise-rejection-reason-to-be-an-error"><a href="#reject-false-警告提示-expected-the-promise-rejection-reason-to-be-an-error" class="header-anchor">#</a> reject(false)警告提示：Expected the Promise rejection reason to be an Error.</h2> <p>正确写法：reject(new Error(false))</p> <h2 id="路由传参-不要用boolean类型的true-false-要用string"><a href="#路由传参-不要用boolean类型的true-false-要用string" class="header-anchor">#</a> 路由传参，不要用boolean类型的true/false,要用string</h2> <p>因为，路由把boolean数据传参到下个页面就会变成string数据</p> <h2 id="连续上传同一张图片第二次调用change事件无反应"><a href="#连续上传同一张图片第二次调用change事件无反应" class="header-anchor">#</a> 连续上传同一张图片第二次调用change事件无反应</h2> <p>解决：
+第一次change处理的最后：
+e.srcElement.value = &quot;&quot;//及时清空</p> <h2 id="resolve-promise-then只执行一次-下一次不执行-第二次不执行"><a href="#resolve-promise-then只执行一次-下一次不执行-第二次不执行" class="header-anchor">#</a> resolve promise.then只执行一次 下一次不执行 第二次不执行</h2> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/**
+     * 选取本地图片
+     * @param[object] params
+     */</span>
+    <span class="token keyword">async</span> <span class="token function">chooseAndUploadPic</span><span class="token punctuation">(</span><span class="token parameter"><span class="token literal-property property">params</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">const</span> maxSize <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+            <span class="token comment">// 插入file dom节点</span>
+            <span class="token keyword">const</span> temp <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'chooseAndUploadPic'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> any<span class="token punctuation">;</span>
+            <span class="token keyword">let</span> FileComponent <span class="token operator">=</span> Vue<span class="token punctuation">.</span><span class="token function">extend</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                <span class="token literal-property property">props</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'cb'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                <span class="token literal-property property">template</span><span class="token operator">:</span>
+                    <span class="token string">'&lt;input type=&quot;file&quot; @change=&quot;onChange&quot; id=&quot;chooseAndUploadPic&quot; ref=&quot;chooseAndUploadPic&quot; accept=&quot;image/*&quot; style=&quot;opacity:0;z-index-99999;&quot;&gt;'</span><span class="token punctuation">,</span>
+                <span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                    <span class="token function">onChange</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        <span class="token keyword">const</span> file <span class="token operator">=</span> e<span class="token punctuation">.</span>currentTarget<span class="token punctuation">.</span>files<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">||</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+                        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>file<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                        <span class="token comment">// 限制上传图片的大小</span>
+                        <span class="token keyword">if</span> <span class="token punctuation">(</span>file<span class="token punctuation">.</span>size <span class="token operator">&gt;</span> maxSize <span class="token operator">*</span> <span class="token number">1024</span> <span class="token operator">*</span> <span class="token number">1024</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                            vm<span class="token punctuation">.</span>$modal<span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                                <span class="token literal-property property">content</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">请选择小于</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>maxSize<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">MB的图片重新上传</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+                                <span class="token literal-property property">footer</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                                    <span class="token punctuation">{</span>
+                                        <span class="token literal-property property">text</span><span class="token operator">:</span> <span class="token string">'确定'</span><span class="token punctuation">,</span>
+                                        <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'primary'</span><span class="token punctuation">,</span>
+                                        <span class="token literal-property property">event</span><span class="token operator">:</span> <span class="token string">'confirm'</span><span class="token punctuation">,</span>
+                                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                                <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                                <span class="token function-variable function">onConfirm</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                                    vm<span class="token punctuation">.</span>$modal<span class="token punctuation">.</span><span class="token function">hide</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                            e<span class="token punctuation">.</span>srcElement<span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span> <span class="token comment">//及时清空</span>
+                            <span class="token keyword">return</span> <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                        <span class="token punctuation">}</span>
+                        waService<span class="token punctuation">.</span><span class="token function">buttonClick</span><span class="token punctuation">(</span><span class="token string">'H5_upload_invoice'</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                        e<span class="token punctuation">.</span>srcElement<span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span> <span class="token comment">//及时清空</span>
+                        <span class="token keyword">if</span> <span class="token punctuation">(</span>temp<span class="token punctuation">)</span> temp<span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+                        <span class="token keyword">return</span> <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                            <span class="token literal-property property">localId</span><span class="token operator">:</span> file<span class="token punctuation">,</span>
+                            <span class="token literal-property property">imageData</span><span class="token operator">:</span> file<span class="token punctuation">,</span>
+                            <span class="token literal-property property">fileName</span><span class="token operator">:</span> file<span class="token punctuation">.</span>name<span class="token punctuation">,</span>
+                            <span class="token literal-property property">url</span><span class="token operator">:</span> file<span class="token punctuation">.</span>path<span class="token punctuation">,</span>
+                        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>temp<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">let</span> FileComponent <span class="token operator">=</span> Vue<span class="token punctuation">.</span><span class="token function">extend</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                    <span class="token literal-property property">props</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'cb'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token literal-property property">template</span><span class="token operator">:</span>
+                        <span class="token string">'&lt;div id=&quot;chooseAndUploadPic&quot; style=&quot;opacity:0;z-index-99999;&quot;&gt;&lt;/div&gt;'</span><span class="token punctuation">,</span>
+                <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                document<span class="token punctuation">.</span>body<span class="token operator">?.</span><span class="token function">appendChild</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">FileComponent</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">$mount</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>$el<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">new</span> <span class="token class-name">FileComponent</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">$mount</span><span class="token punctuation">(</span><span class="token string">'#chooseAndUploadPic'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'chooseAndUploadPic'</span><span class="token punctuation">)</span><span class="token operator">?.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</code></pre></div><p>原因：
+不能用appendchild一次就行，因为resolve是第一次的。
+解决：
+需要替换component,重新注入resolve函数。</p> <h2 id="h5-input-type-file-预览图片"><a href="#h5-input-type-file-预览图片" class="header-anchor">#</a> h5 input type=file 预览图片</h2> <p>要把e.currentTarget.files[0]对象，经过FileReader读取后获得base64，base64才能显示！</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">baseHandle</span><span class="token punctuation">(</span><span class="token parameter">file</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> reader <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FileReader</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">let</span> imgResult <span class="token operator">=</span> <span class="token string">''</span> <span class="token keyword">as</span> any<span class="token punctuation">;</span>
+        <span class="token keyword">let</span> base64 <span class="token operator">=</span> <span class="token string">''</span> <span class="token keyword">as</span> any<span class="token punctuation">;</span>
+        reader<span class="token punctuation">.</span><span class="token function">readAsDataURL</span><span class="token punctuation">(</span>file<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        reader<span class="token punctuation">.</span><span class="token function-variable function">onload</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            imgResult <span class="token operator">=</span> reader<span class="token punctuation">.</span>result <span class="token operator">||</span> <span class="token string">''</span><span class="token punctuation">;</span>
+            base64 <span class="token operator">=</span> reader<span class="token punctuation">.</span>result <span class="token operator">||</span> <span class="token string">''</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        reader<span class="token punctuation">.</span><span class="token function-variable function">onerror</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">reject</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        reader<span class="token punctuation">.</span><span class="token function-variable function">onloadend</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">resolve</span><span class="token punctuation">(</span>imgResult<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="split-判空-处理"><a href="#split-判空-处理" class="header-anchor">#</a> split + 判空 处理</h2> <p>直接使用split，前后各有一个“”值。</p> <div class="language- extra-class"><pre class="language-text"><code>&gt;&gt; var str=',a,b,c,d,e,f,';
+&gt;&gt; str.split(',');
+
+//(8) [&quot;&quot;, &quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;, &quot;&quot;]
+</code></pre></div><p>临时方法：split后，可以用filter过滤掉空值。</p> <div class="language- extra-class"><pre class="language-text"><code>&gt;&gt; var str=',a,b,c,d,e,f,';
+&gt;&gt; str.Split(',').filter(item =&gt; item != '');
+
+//(6) [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;]
+</code></pre></div><p>一劳永逸的干法：</p> <div class="language- extra-class"><pre class="language-text"><code>&gt;&gt; String.prototype.Split = function (s)
+&gt;&gt; { 
+&gt;&gt;      return this.split(s).filter(item =&gt; item != '');
+&gt;&gt; }
+
+&gt;&gt; var str=',a,b,c,d,e,f,';
+&gt;&gt; str.Split(',');
+
+//(6) [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;, &quot;f&quot;]
+</code></pre></div><p>https://blog.csdn.net/admans/article/details/103308466</p> <h2 id="npm-warn-deprecated-core-js-2-6-12-core-js-is-no-longer-maintained-and-not-recommended-for-usage-due-to-the-number-of-issues-please-upgrade-your-dependencies-to-the-actual-version-of-core-js-3"><a href="#npm-warn-deprecated-core-js-2-6-12-core-js-is-no-longer-maintained-and-not-recommended-for-usage-due-to-the-number-of-issues-please-upgrade-your-dependencies-to-the-actual-version-of-core-js-3" class="header-anchor">#</a> npm WARN deprecated core-js@2.6.12: core-js@❤️ is no longer maintained and not recommended for usage due to the number of issues. Please, upgrade your dependencies to the actual version of core-js@3.</h2> <p>npm install --save  -g core-js@^3
+https://www.cnblogs.com/xbxxf/p/12514258.html</p> <h2 id="babel-polyfill引用"><a href="#babel-polyfill引用" class="header-anchor">#</a> babel-polyfill引用</h2> <p>最后发现就是ie9和一些低版本的高级浏览器对es6新语法并不支持，babel-polyfill可以解决</p> <p>首先：在main.js中引入babel-polyfill</p> <p>import 'babel-polyfill';
+然后在webpack.config.js的入口引用</p> <p>entry: [
+'babel-polyfill',
+。。。
+]</p> <p>https://blog.csdn.net/weixin_39827306/article/details/111834330</p> <h2 id="browserslist-配置"><a href="#browserslist-配置" class="header-anchor">#</a> browserslist 配置</h2> <p>官网查询
+https://browserl.ist/
+配置说明：
+<img src="https://images.gitee.com/uploads/images/2021/0428/113528_85428280_1779874.png" alt="输入图片说明" title="屏幕截图.png">
+https://zqianduan.com/pages/browserslist-config.html#%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95</p> <h2 id="ie11-兼容问题-bundle-js-script1002-语法错误"><a href="#ie11-兼容问题-bundle-js-script1002-语法错误" class="header-anchor">#</a> IE11 兼容问题 bundle.js   SCRIPT1002: 语法错误</h2> <p>package.json
+&quot;dependencies&quot;: {
+&quot;@github/wechart&quot;: &quot;^1.0.14&quot;,
+&quot;axios&quot;: &quot;^0.21.1&quot;,
+&quot;babel-polyfill&quot;: &quot;^6.26.0&quot;
+},
+&quot;browserslist&quot;: [
+&quot;&gt; 1%&quot;,
+&quot;last 2 versions&quot;
+]</p> <p>main.js
+import 'babel-polyfill';</p> <h2 id="script5045-strict-模式下不允许分配到只读属性"><a href="#script5045-strict-模式下不允许分配到只读属性" class="header-anchor">#</a> SCRIPT5045: strict 模式下不允许分配到只读属性</h2> <p><img src="https://images.gitee.com/uploads/images/2021/0428/145710_fd6db108_1779874.png" alt="输入图片说明" title="屏幕截图.png"></p> <h2 id="rollup-编译-css"><a href="#rollup-编译-css" class="header-anchor">#</a> rollup 编译 css</h2> <p>npm install --save-dev rollup-plugin-postcss
+https://blog.csdn.net/weixin_33955681/article/details/89224103</p> <h2 id="error-moduleexports-is-not-exported-by-xxxx"><a href="#error-moduleexports-is-not-exported-by-xxxx" class="header-anchor">#</a> Error: '__moduleExports' is not exported by xxxx</h2> <p>原因：
+<img src="https://images.gitee.com/uploads/images/2021/0429/150825_51a9162c_1779874.png" alt="输入图片说明" title="屏幕截图.png">
+https://blog.csdn.net/DreamFJ/article/details/93876688</p> <p>解决：
+安装rollup-plugin-commonjs</p> <p>其中commonjs插件配置了选项，指明./lib/main.js文件的导出变量__moduleExports。</p> <p>namedExports配置项的格式：</p> <p>Options.namedExports?: {
+// 文件路径：[导出变量名]
+[key: string]: string[];
+}</p> <p>// 即键是文件路径，值是导出变量数组（字符串数组）。</p> <h2 id="辨别模块写法"><a href="#辨别模块写法" class="header-anchor">#</a> 辨别模块写法</h2> <p>https://www.cnblogs.com/niklai/p/6095974.html</p> <p>(function (global, factory) {
+typeof exports === 'object' &amp;&amp; typeof module !== 'undefined' ? factory(exports) :
+typeof define === 'function' &amp;&amp; define.amd ? define(['exports'], factory) :
+(global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.gridjs = {}));
+}(this, (function (exports) { 'use strict';
+exports是commonjs规范，define是amd规范的写法
+注意：
+umd模块引入，用require来解决</p> <h2 id="js-class-遍历-删除-节点"><a href="#js-class-遍历-删除-节点" class="header-anchor">#</a> js  class  遍历 删除 节点</h2> <p>https://zhidao.baidu.com/question/1799835097226743627.html</p> <h2 id="请求-get-post-put-delete-传参方式-差别"><a href="#请求-get-post-put-delete-传参方式-差别" class="header-anchor">#</a> 请求 get post put delete 传参方式 差别</h2> <p>只有get是?key=value字符串方式，其它都是json格式传参</p> <h2 id="js循环依赖问题"><a href="#js循环依赖问题" class="header-anchor">#</a> js循环依赖问题</h2> <p><img src="https://images.gitee.com/uploads/images/2021/0701/150839_a7318f00_1779874.png" alt="输入图片说明" title="屏幕截图.png">
+eslint可以进行提示：
+<img src="https://images.gitee.com/uploads/images/2021/0701/150945_d69346cf_1779874.png" alt="输入图片说明" title="屏幕截图.png">
+https://blog.csdn.net/visionke/article/details/89395086</p> <h2 id="axios下载文件流"><a href="#axios下载文件流" class="header-anchor">#</a> axios下载文件流</h2> <p>https://cloud.tencent.com/developer/article/1455136</p> <h2 id="encodeuri-不能编码的特殊字符"><a href="#encodeuri-不能编码的特殊字符" class="header-anchor">#</a> encodeURI 不能编码的特殊字符</h2> <p>以下在 URI 中具有特殊含义的 ASCII 标点符号，encodeURI() 函数是不会进行转义的：;/?😡&amp;=+$,#
+如果 URI 组件中含有分隔符，比如 ? 和 #，则应当使用encodeURIComponent() 方法分别对各组件进行编码。</p> <h2 id="encodeuri-encodeuri-字符"><a href="#encodeuri-encodeuri-字符" class="header-anchor">#</a> encodeURI(encodeURI([字符]))</h2> <p>双重编码 不等于 一次编码</p> <h2 id="jquery动态添加dom"><a href="#jquery动态添加dom" class="header-anchor">#</a> jquery动态添加dom</h2> <div class="language- extra-class"><pre class="language-text"><code>$('&lt;input /&gt;', {
+        id: 'cbx',
+        name: 'cbx',
+        type: 'checkbox',
+        checked: 'checked',
+        click: function() {
+          alert(&quot;点我了~~&quot;);
+        }
+      }).appendTo($('#wrap'));
+</code></pre></div><p>https://www.cnblogs.com/wolfocme110/p/4294834.html</p> <h2 id="jquery复制到粘贴板-浏览器-全兼容"><a href="#jquery复制到粘贴板-浏览器-全兼容" class="header-anchor">#</a> jquery复制到粘贴板 浏览器 全兼容</h2> <div class="language- extra-class"><pre class="language-text"><code>var clipboard = new ClipboardJS(&quot;#clipboardData&quot;, { // #clipboardData,为点击目标dom节点
+    text: function () {
+        return res;
+    },
+});
+clipboard.on(&quot;success&quot;, function (e) {
+     // alert(&quot;复制成功&quot;);
+    console.log(&quot;复制成功&quot;);
+});
+
+clipboard.on(&quot;error&quot;, function (e) {
+    console.log(e);
+});
+</code></pre></div><p>https://www.cnblogs.com/cathyxiao/p/9829419.html</p> <h2 id="ajax超时处理"><a href="#ajax超时处理" class="header-anchor">#</a> $.ajax超时处理</h2> <div class="language- extra-class"><pre class="language-text"><code>$.ajax({
+    url: '/getData',
+    timeout:3000 //3 second timeout【关键】
+})).then(function(){
+    //do something
+}).catch(function(e) {
+    if(e.statusText == 'timeout'){ //【关键】
+        alert('Native Promise: Failed from timeout');
+        //do something. Try again perhaps?
+    }
+});
+</code></pre></div><p>https://blog.csdn.net/weixin_39859394/article/details/119433787</p> <h2 id="数字-字符串-按-千分位-处理"><a href="#数字-字符串-按-千分位-处理" class="header-anchor">#</a> 数字 / 字符串 按 千分位 处理</h2> <p>转成字符串：</p> <div class="language- extra-class"><pre class="language-text"><code>parseFloat(num).toLocaleString()
+</code></pre></div><p>https://www.cnblogs.com/hjvsdr/p/7808097.html</p> <h2 id="document-getelementsbyclassname-class-foreach-报错uncaught-typeerror-undefined-is-not-a-function"><a href="#document-getelementsbyclassname-class-foreach-报错uncaught-typeerror-undefined-is-not-a-function" class="header-anchor">#</a> <a href="https://www.cnblogs.com/ming1025/p/13649635.html" target="_blank" rel="noopener noreferrer">document.getElementsByClassName('class').forEach 报错Uncaught TypeError: undefined is not a function<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h2> <p>解决：</p> <div class="language- extra-class"><pre class="language-text"><code>[...document.getElementsByClassName('myClass'))].forEach(v=&gt;{
+   console.log(v)
+});
+</code></pre></div><p>https://www.cnblogs.com/ming1025/p/13649635.html</p> <h3 id="style-js控制无效"><a href="#style-js控制无效" class="header-anchor">#</a> style js控制无效</h3> <p>原因：</p> <p>js找不到这个属性</p> <p>解决方法：</p> <p>css样式先加上样式，js才能找到这个属性，才能控制这个属性。</p> <h2 id="html2pdf-失效"><a href="#html2pdf-失效" class="header-anchor">#</a> html2PDF 失效</h2> <p>引入：
+import html2PDF from 'jspdf-html2canvas';
+webpack编译配置：
+{
+test: /.js$/,
+loader: 'babel-loader',
+include: [resolve('src'),
+resolve('test'),
+resolve('node_modules/vue-tree-color/src'),
+resolve('node_modules/vue-tree-color/dist')]
+resolve('node_modules/canvg/lib'),
+resolve('node_modules/canvg/lib/presets'),
+resolve('node_modules/highcharts/lib/canvg.js'),
+resolve('node_modules/jspdf-html2canvas/dist')]
+},
+出问题的原因：
+resolve('node_modules/canvg/lib'),
+resolve('node_modules/canvg/lib/presets'),
+resolve('node_modules/highcharts/lib/canvg.js'),
+resolve('node_modules/jspdf-html2canvas/dist')]</p> <h3 id="iview的spin显示范围-不在选定的模块里"><a href="#iview的spin显示范围-不在选定的模块里" class="header-anchor">#</a> iview的spin显示范围，不在选定的模块里</h3> <p>要在他的父级节点加样式： &quot;position: relative;&quot;，才能框定在这个模块显示loading动画</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;Spin size='large' fix v-if=&quot;analysisLoading&quot;&gt;&lt;/Spin&gt;
+</code></pre></div><h2 id="iview-select-数据-大-卡顿"><a href="#iview-select-数据-大-卡顿" class="header-anchor">#</a> iview select 数据 大 卡顿</h2> <p>展示前100条数据：on-open-change</p> <p>https://www.cnblogs.com/huoshengmiao/p/13764176.html</p> <p>搜索用全数据搜索：remote-method</p> <p>http://v1.iviewui.com/components/select</p> <h2 id="for循环里settimeout-延时器-使用方法"><a href="#for循环里settimeout-延时器-使用方法" class="header-anchor">#</a> for循环里setTimeout(延时器)使用方法</h2> <p>https://www.cnblogs.com/wl0804/p/11987833.html</p> <h2 id="js-怎么-改变-传入-参数"><a href="#js-怎么-改变-传入-参数" class="header-anchor">#</a> js 怎么 改变 传入 参数</h2> <p>参数为对象，即可。</p> <div class="language- extra-class"><pre class="language-text"><code>const data = {
+  a: 1,
+  b: 2
+};
+
+function s(data){
+    data.a += data.b;
+    return true
+}
+</code></pre></div><p>https://www.zhihu.com/question/433032811</p> <p>像组件，直接传入this对象</p> <h3 id="eslint检测-vscode-expected-indentation-of-12-spaces-but-found-3-tabs"><a href="#eslint检测-vscode-expected-indentation-of-12-spaces-but-found-3-tabs" class="header-anchor">#</a> eslint检测：vscode Expected indentation of 12 spaces but found 3 tabs.</h3> <p>https://www.cnblogs.com/xuanmanstein/p/9181592.html</p> <h3 id="什么是伪代码"><a href="#什么是伪代码" class="header-anchor">#</a> <a href="http://localhost:8080/my-blog-vuepress/1_%E5%89%8D%E7%AB%AF/1_%E5%9F%BA%E7%A1%80/JS.html#%E4%BB%80%E4%B9%88%E6%98%AF%E4%BC%AA%E4%BB%A3%E7%A0%81%EF%BC%9F" target="_blank" rel="noopener noreferrer">#<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>什么是伪代码？</h3> <p>不正式、不标准、接近自然语言的语言，把程序员的意思表达出来。</p> <h3 id="js声明变量没有赋值"><a href="#js声明变量没有赋值" class="header-anchor">#</a> <a href="http://localhost:8080/my-blog-vuepress/1_%E5%89%8D%E7%AB%AF/1_%E5%9F%BA%E7%A1%80/JS.html#js%E5%A3%B0%E6%98%8E%E5%8F%98%E9%87%8F%E6%B2%A1%E6%9C%89%E8%B5%8B%E5%80%BC" target="_blank" rel="noopener noreferrer">#<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>js声明变量没有赋值</h3> <p>初始值为undefined</p> <h2 id="形参-o-的指向发生改变-指向堆内存中一个新的对象"><a href="#形参-o-的指向发生改变-指向堆内存中一个新的对象" class="header-anchor">#</a> 形参 o 的指向发生改变，指向堆内存中一个新的对象</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">changeObjProperty</span><span class="token punctuation">(</span><span class="token parameter">o</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  o<span class="token punctuation">.</span>siteUrl <span class="token operator">=</span> <span class="token string">&quot;http://www.baidu.com&quot;</span>
+  o <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Object</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 形参 o 的指向发生改变，指向堆内存中一个新的对象</span>
+  o<span class="token punctuation">.</span>siteUrl <span class="token operator">=</span> <span class="token string">&quot;http://www.google.com&quot;</span>
+<span class="token punctuation">}</span> 
+<span class="token keyword">let</span> webSite <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Object</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">changeObjProperty</span><span class="token punctuation">(</span>webSite<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>webSite<span class="token punctuation">.</span>siteUrl<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 结果是：http://www.baidu.com</span>
+</code></pre></div><h2 id="node历史版本地址"><a href="#node历史版本地址" class="header-anchor">#</a> node历史版本地址：</h2> <p>npm 对照 node 版本：</p> <p><a href="https://nodejs.org/en/download/releases/" title="https://nodejs.org/en/download/releases/" target="_blank" rel="noopener noreferrer">Previous Releases | Node.js<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>或者</p> <p><a href="https://registry.npmmirror.com/binary.html?path=node/v10.13.0/" title="https://registry.npmmirror.com/binary.html?path=node/v10.13.0/" target="_blank" rel="noopener noreferrer">CNPM Binaries Mirror<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>node与npm对应</p> <p><img src="C:%5CUsers%5CASUS%5CAppData%5CRoaming%5Cmarktext%5Cimages%5C2022-07-21-09-50-30-image.png" alt=""></p> <p><img src="C:%5CUsers%5CASUS%5CAppData%5CRoaming%5Cmarktext%5Cimages%5C2022-07-21-09-54-49-image.png" alt=""></p> <h2 id="js-如何判断两张图片是否相同"><a href="#js-如何判断两张图片是否相同" class="header-anchor">#</a> Js 如何判断两张图片是否相同</h2> <p><a href="https://www.h5w3.com/139799.html" target="_blank" rel="noopener noreferrer">【Web前端问题】Js 如何判断两张图片是否相同 - H5W3<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="对象解构"><a href="#对象解构" class="header-anchor">#</a> 对象解构：</h2> <p>const abc = {a:1};
+const {a:a1} = abc</p> <h2 id="运算符"><a href="#运算符" class="header-anchor">#</a> ++运算符</h2> <p>自身变量加1，输出也是加1输出
+var a = 1;
+a++
+// a 为2，且输出2</p> <h2 id="sort"><a href="#sort" class="header-anchor">#</a> Sort</h2> <p>会改变原数组
+arr.sort([compareFunction])
+compareFunction (可选) 用来指定按某种顺序进行排列的函数。如果省略，元素按照转换为的字符串的各个字符的Unicode位点进行排序。</p> <p>来自 <a href="https://zhuanlan.zhihu.com/p/492132600" target="_blank" rel="noopener noreferrer">https://zhuanlan.zhihu.com/p/492132600<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>
+并不会按照数字大小排序！sort默认是按照字符串大小排序的。因此，要对number数组排序切记加入compareFunction参数！
+例如：
+x1.sort((a, b) =&gt; a - b);
+来自 <a href="https://zhuanlan.zhihu.com/p/492132600" target="_blank" rel="noopener noreferrer">https://zhuanlan.zhihu.com/p/492132600<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="判断undefined-null"><a href="#判断undefined-null" class="header-anchor">#</a> 判断undefined null</h2> <p>const judgeunNullUndefined = (param, fun) =&gt; {
+if (!params &amp;&amp; params !== 0) {
+// 为Null、Undefined
+} else {
+// 不为Null、Undefined
+fun()
+}
+}</p> <h2 id="missing-radix-parameter-radix"><a href="#missing-radix-parameter-radix" class="header-anchor">#</a> Missing radix parameter radix</h2> <p>const heightStr = '172';
+const heightInt = parseInt(heightStr, 10);
+最后我们回顾一下parseInt(string, radix)函数的，这个函数一共需要两个参数：
+● string：必需。要被解析的字符串。
+● radix： 可选。表示要解析的数字的基数。该值介于 2 ~ 36 之间。如果省略该参数或其值为 0，则数字将以 10 为基础来解析。如果它以 “0x” 或 “0X” 开头，将以 16 为基数。如果该参数小于 2 或者大于 36，则 parseInt() 将返回 NaN。
+来自 <a href="https://www.jianshu.com/p/3cd225cd9a6a" target="_blank" rel="noopener noreferrer">https://www.jianshu.com/p/3cd225cd9a6a<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="css3实现无限循环的无缝滚动"><a href="#css3实现无限循环的无缝滚动" class="header-anchor">#</a> CSS3实现无限循环的无缝滚动</h2> <p>用CSS3实现无限循环的无缝滚动 - 蚊子博客 - 博客园 (cnblogs.com)
+npm install vue-seamless-scroll --save
+来自 <a href="https://chenxuan0000.github.io/vue-seamless-scroll/guide/" target="_blank" rel="noopener noreferrer">https://chenxuan0000.github.io/vue-seamless-scroll/guide/<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>
+Vue的无缝滚动插件
+来自 <a href="https://blog.csdn.net/qq_37698249/article/details/120217173" target="_blank" rel="noopener noreferrer">https://blog.csdn.net/qq_37698249/article/details/120217173<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>
+01 - 默认配置 | vue-seamless-scroll (chenxuan0000.github.io)</p> <h2 id="前端-html-js-跨域-下载文件"><a href="#前端-html-js-跨域-下载文件" class="header-anchor">#</a> 前端 html js 跨域 下载文件</h2> <p>http://t.zoukankan.com/hsdying-p-12768200.html</p></div> <div class="spacer"></div> <div class="prev-next d-none d-sm-flex justify-space-between mt-9" data-v-cf01dfa6><button type="button" class="ml-n4 v-btn v-btn--plain theme--light v-size--default primary--text" data-v-cf01dfa6><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate v-icon--dense mdi mdi-arrow-left theme--light" data-v-cf01dfa6></i> <span data-v-cf01dfa6>java</span></span></button> <div class="spacer" data-v-cf01dfa6 data-v-cf01dfa6></div> <button type="button" class="mr-n4 v-btn v-btn--plain theme--light v-size--default primary--text" data-v-cf01dfa6><span class="v-btn__content"><span data-v-cf01dfa6>markdown</span> <i aria-hidden="true" class="v-icon notranslate v-icon--dense mdi mdi-arrow-right theme--light" data-v-cf01dfa6></i></span></button></div></div></div> <div class="v-menu" data-v-85cb3d8a><!----></div> <button type="button" class="to-top v-btn v-btn--bottom v-btn--is-elevated v-btn--fab v-btn--fixed v-btn--has-bg v-btn--right v-btn--round theme--light v-size--default" style="display:none;" data-v-85cb3d8a data-v-85cb3d8a><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate mdi mdi-arrow-expand-up theme--light primary--text" data-v-85cb3d8a></i></span></button></div></main> <!----></div></div><div class="global-ui"><div class="v-snack v-snack--bottom v-snack--has-background v-snack--right v-snack--vertical" style="padding-bottom:0px;padding-left:0px;padding-right:0px;padding-top:0px;" data-v-fec8b358><div class="v-snack__wrapper v-sheet theme--dark" style="max-width:0px;display:none;"><div role="status" aria-live="polite" class="v-snack__content">
+    作者又有了新的笔记哟，点击刷新查看
+    </div><div class="v-snack__action "><button type="button" class="v-btn v-btn--text theme--dark v-size--default v-snack__btn"><span class="v-btn__content">
+        刷新
+      </span></button></div></div></div></div></div>
+    <script src="/andyyang-blog-vuepress/assets/js/chunk-default.21cc7129.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/369.8ae23cd4.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/1094.175f12e0.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/364.6411275a.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/vendors~app.911457c4.js" defer></script><script src="/andyyang-blog-vuepress/assets/js/app.77efb429.js" defer></script>
+  </body>
+</html>
